@@ -1,37 +1,20 @@
 <header class="header">
-  <nav class="nav">
-    <button class="button" style="display: none;">
+
+  <div class="btn-toggle" (click)="toggleNavbar()">
+    <button class="button">
       <img src="./../../../assets/img/icons/list.svg" alt="toogle">
     </button>
-    <button class="button" style="display: none;">
-      <img src="./../../../assets/img/icons/times.svg" alt="toogle">
-    </button>
+  </div>
 
-    <ul>
-      <li>
-        <a routerLink="">
-          <img src="./../../../assets/img/icons/home.svg" alt="home">
-          <span>Inicio</span>
-        </a>
-      </li>
-      <li>
-        <a routerLink="trabajos">
-          <img src="./../../../assets/img/icons/folder.svg" alt="works">
-          <span>Trabajos</span>
-        </a>
-      </li>
-      <li>
-        <a routerLink="resumen">
-          <img src="./../../../assets/img/icons/user.svg" alt="about">
-          <span>Resumen</span>
-        </a>
-      </li>
-      <li>
-        <a routerLink="contacto">
-          <img src="./../../../assets/img/icons/envelope.svg" alt="contact">
-          <span>Contacto</span>
+  <nav class="nav" [ngClass]="isNavbarVisible ? 'show' : 'hide'">
+    <ul class="navbar">
+      <li class="item" *ngFor="let route of routeNavbar">
+        <a [routerLink]="route.route">
+          <img [src]="route.icon" [alt]="route.title">
+          <span>{{route.title}}</span>
         </a>
       </li>
     </ul>
   </nav>
+
 </header>
