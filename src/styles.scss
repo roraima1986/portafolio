@@ -261,12 +261,26 @@ a {
       .project {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content:space-between;
         padding: 1rem;
 
-        h3 {
+        .project-title {
           color: $gray;
           margin-bottom: 0.5rem;
+        }
+
+        .project-items {
+          display: flex;
+          flex-wrap: wrap;
+
+          .project-item {
+            background-color: $blue;
+            padding: 0.2rem;
+            border-radius: 0.5rem;
+            font-size: 0.8rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+          }
         }
 
         p {
@@ -309,41 +323,46 @@ a {
 /* Resumen */
 
 .about {
-  h2 {
-    margin-bottom: 3rem;
-  }
 
-  .figure {
+  .article {
     text-align: center;
 
-    img {
-      width: 30%;
+    h2 {
+      margin-bottom: 3rem;
     }
-  }
 
-  p {
-    margin-bottom: 1rem;
-  }
+    .figure {
+      text-align: center;
 
-  h3 {
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-    color: $gray;
-    font-size: 1.5rem;
-  }
+      img {
+        width: 30%;
+      }
+    }
 
-  ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
+    p {
+      margin-bottom: 1rem;
+    }
 
-    li {
+    h3 {
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      color: $gray;
+      font-size: 1.5rem;
+    }
+
+    ul {
       display: flex;
-      flex-direction: column;
       justify-content: center;
+      flex-wrap: wrap;
       align-items: center;
-      padding: 1rem;
+
+      li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+      }
     }
   }
 }

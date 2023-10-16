@@ -1,53 +1,27 @@
-<section class="section about" id="about">
+<section class="section about" id="about" >
 
-  <h2>Resumen</h2>
+  <article class="article" *ngFor="let obj of about">
 
-  <figure class="figure">
-    <img src="./../../../assets/img/avatar/foto.png" alt="foto">
-  </figure>
+    <ng-container *ngIf="obj.is_published">
 
-  <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt.</p>
+      <h2>Resumen</h2>
 
-  <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.</p>
+      <figure class="figure">
+        <img [src]="obj.photo" [alt]="obj.name">
+      </figure>
 
-  <p>Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla porttitor accumsan tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
+      <p>{{obj.description}}</p>
 
-  <h3>Habilidades</h3>
+      <h3>Habilidades</h3>
 
-  <ul>
-    <li>
-      HTML5
-    </li>
-    <li>
-      CSS
-    </li>
-    <li>
-      JavaScript
-    </li>
-    <li>
-      Bootstrap
-    </li>
-    <li>
-      TypeScript
+      <ul>
+        <li *ngFor="let item of obj.skill">
+          {{item.name}}
+        </li>
+      </ul>
+    </ng-container>
 
-    </li>
-    <li>
-      Angular
-
-    </li>
-    <li>
-      Python
-
-    </li>
-    <li>
-      Django
-
-    </li>
-    <li>
-      Django Rest Framework
-
-    </li>
-  </ul>
+  </article>
 
 </section>
 

@@ -2,67 +2,38 @@
   <h2>Diseños</h2>
 
   <div class="grid-container">
-    <article class="article">
-      <div class="img-project">
-        <img class="img" src="./../../../assets/img/projects/product-preview-card-design.jpg" alt="Product preview card component">
-      </div>
+    <ng-container *ngFor="let obj of work">
+      <ng-container *ngIf="obj.is_design && obj.is_active">
+        <article class="article" >
+          <div class="img-project">
+            <img class="img" [src]="obj.photo" [alt]="obj.title">
+          </div>
 
-      <div class="project">
-          <h3>Product preview card component</h3>
-          <p>HTML5 / 06/10/2023</p>
-          <p class="observation">Desafio de Frontend Mentor</p>
+          <div class="project">
+            <h3 class="project-title">{{obj.title}}</h3>
+            <ul class="project-items">
+              <li *ngFor="let item of obj.skill" class="project-item">
+                {{item.name}}
+              </li>
+            </ul>
 
-        <div class="buttons">
-          <a href="https://github.com/roraima1986/productcard.github.io" target="_blank" class="button">
-            <img src="./../../../assets/img/icons/github.svg">
-          </a>
-          <a href="https://roraima1986.github.io/productcard.github.io/" target="_blank" class="button">
-            <img src="./../../../assets/img/icons/globe.svg">
-          </a>
-        </div>
-      </div>
-    </article>
+            <p>{{obj.date_project | date}}</p>
+            <p class="observation" *ngIf="obj.observation">{{obj.observation}}</p>
+
+            <div class="buttons">
+              <a [href]="obj.link_github" target="_blank" class="button" *ngIf="obj.link_github">
+                <img src="./../../../assets/img/icons/github.svg">
+              </a>
+              <a [href]="obj.link_website" target="_blank" class="button" *ngIf="obj.link_website">
+                <img src="./../../../assets/img/icons/globe.svg">
+              </a>
+            </div>
+          </div>
+        </article>
+      </ng-container>
+    </ng-container>
 
 
-    <article class="article">
-      <div class="img-project">
-        <img  class="img" src="./../../../assets/img/projects/results-summary-design.jpg" alt="Results summary component">
-      </div>
-      <div class="project">
-        <h3>Results summary component</h3>
-        <p>HTML5, CSS, Sass / 03/10/2023</p>
-        <p class="observation">Desafio de Frontend Mentor</p>
-
-        <div class="buttons">
-          <a href="https://github.com/roraima1986/resultssummary.github.io" target="_blank" class="button">
-            <img src="./../../../assets/img/icons/github.svg">
-          </a>
-          <a href="https://roraima1986.github.io/resultssummary.github.io/" target="_blank" class="button">
-            <img src="./../../../assets/img/icons/globe.svg">
-          </a>
-        </div>
-      </div>
-    </article>
-
-    <article class="article">
-      <div class="img-project">
-        <img class="img" src="./../../../assets/img/projects/code-qr-design.jpg" alt="QR code component main">
-      </div>
-      <div class="project">
-        <h3>QR code component main</h3>
-        <p>HTML5, CSS, Sass / 01/10/2023</p>
-        <p class="observation">Desafio de Frontend Mentor</p>
-
-        <div class="buttons">
-          <a href="https://github.com/roraima1986/qrcode.github.io" target="_blank" class="button">
-            <img src="./../../../assets/img/icons/github.svg">
-          </a>
-          <a href="https://roraima1986.github.io/qrcode.github.io/" target="_blank" class="button">
-            <img src="./../../../assets/img/icons/globe.svg">
-          </a>
-        </div>
-      </div>
-    </article>
   </div>
 
 </section>
