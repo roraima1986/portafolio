@@ -1,35 +1,251 @@
-import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
-import { Injectable } from '@angular/core';
-import { catchError, Observable, throwError } from 'rxjs';
-import { environments } from '../environments';
-import { Work } from '../interfaces/work.interface';
 
-const httpOptions = {
-  headers: new HttpHeaders({
-    'Content-Type': 'application/json',
-  })
-}
+import { Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
 export class WorkService {
 
-  private readonly baseUrl:string = environments.baseUrl;
-
-  private handleError(error:HttpErrorResponse) {
-    if (error.status === 0) {
-      console.log('Ocurrió un error: ', error.error);
-    } else {
-      console.log(`El backend devolvió el código ${error.status}:, el cuerpo era ${error.error}`);
-    }
-
-    return throwError(() => new Error('Algo malo sucedio; Por favor, inténtelo de nuevo más tarde.'));
+  getAbout() {
+    return [
+      {
+        id           :18,
+        photo        : "./../../../assets/img/projects/profile-card-design.jpg",
+        title        : "Profile card component",
+        skill        : ["HTML", "CSS"],
+        date_project : new Date(2023, 9, 29),
+        observation  : "Desafio de Frontend Mentor",
+        link_github  : "https://github.com/roraima1986/profile-card.github.io",
+        link_website : "https://roraima1986.github.io/profile-card.github.io/",
+        is_work      : false,
+        is_design    : true,
+        is_active    : true,
+      },
+      {
+        id           :17,
+        photo        : "./../../../assets/img/projects/column-preview-card-design.jpg",
+        title        : "3-column preview card component",
+        skill        : ["HTML", "CSS"],
+        date_project : new Date(2023, 9, 25),
+        observation  : "Desafio de Frontend Mentor",
+        link_github  : "https://github.com/roraima1986/column-preview-card.github.io",
+        link_website : "https://roraima1986.github.io/column-preview-card.github.io/",
+        is_work      : false,
+        is_design    : true,
+        is_active    : true,
+      },
+      {
+        id           :16,
+        photo        : "./../../../assets/img/projects/stats-preview-design.jpg",
+        title        : "Stats preview card component",
+        skill        : ["HTML", "CSS"],
+        date_project : new Date(2023, 9, 24),
+        observation  : "Desafio de Frontend Mentor",
+        link_github  : "https://github.com/roraima1986/stats-preview-card.github.io",
+        link_website : "https://roraima1986.github.io/stats-preview-card.github.io/",
+        is_work      : false,
+        is_design    : true,
+        is_active    : true,
+      },
+      {
+        id           :15,
+        photo        : "./../../../assets/img/projects/order-summary-card-design.jpg",
+        title        : "Order Summary Card",
+        skill        : ["HTML", "CSS"],
+        date_project : new Date(2023, 9, 16),
+        observation  : "Desafio de Frontend Mentor",
+        link_github  : "https://github.com/roraima1986/order-summary-card.github.io",
+        link_website : "https://roraima1986.github.io/order-summary-card.github.io/",
+        is_work      : false,
+        is_design    : true,
+        is_active    : true,
+      },
+      {
+        id           :14,
+        photo        : "./../../../assets/img/projects/nft-preview-card-design.jpg",
+        title        : "NFT Preview Card",
+        skill        : ["HTML", "CSS"],
+        date_project : new Date(2023, 9, 13),
+        observation  : "Desafio de Frontend Mentor",
+        link_github  : "https://github.com/roraima1986/nft-preview-card.github.io",
+        link_website : "https://roraima1986.github.io/nft-preview-card.github.io/",
+        is_work      : false,
+        is_design    : true,
+        is_active    : true,
+      },
+      {
+        id           :13,
+        photo        : "./../../../assets/img/projects/interactive-rating-component-design.jpg",
+        title        : "Interactive Rating",
+        skill        : ["HTML", "CSS", "JavaScript"],
+        date_project : new Date(2023, 9, 10),
+        observation  : "Desafio de Frontend Mentor",
+        link_github  : "https://github.com/roraima1986/interactive-rating.github.io",
+        link_website : "https://roraima1986.github.io/interactive-rating.github.io/",
+        is_work      : false,
+        is_design    : true,
+        is_active    : true,
+      },
+      {
+        id           :12,
+        photo        : "./../../../assets/img/projects/product-preview-card-design.jpg",
+        title        : "Product Preview Card",
+        skill        : ["HTML", "CSS"],
+        date_project : new Date(2023, 9, 5),
+        observation  : "Desafio de Frontend Mentor",
+        link_github  : "https://github.com/roraima1986/productcard.github.io",
+        link_website : "https://roraima1986.github.io/productcard.github.io/",
+        is_work      : false,
+        is_design    : true,
+        is_active    : true,
+      },
+      {
+        id           :11,
+        photo        : "./../../../assets/img/projects/results-summary-design.jpg",
+        title        : "Results summary",
+        skill        : ["HTML", "CSS"],
+        date_project : new Date(2023, 9, 3),
+        observation  : "Desafio de Frontend Mentor",
+        link_github  : "https://github.com/roraima1986/resultssummary.github.io",
+        link_website : "https://roraima1986.github.io/resultssummary.github.io/",
+        is_work      : false,
+        is_design    : true,
+        is_active    : true,
+      },
+      {
+        id           :10,
+        photo        : "./../../../assets/img/projects/code-qr-design.jpg",
+        title        : "QR code",
+        skill        : ["HTML", "CSS"],
+        date_project : new Date(2023, 9, 1),
+        observation  : "Desafio de Frontend Mentor",
+        link_github  : "https://github.com/roraima1986/qrcode.github.io",
+        link_website : "https://roraima1986.github.io/qrcode.github.io/",
+        is_work      : false,
+        is_design    : true,
+        is_active    : true,
+      },
+      {
+        id           :9,
+        photo        : "./../../../assets/img/projects/portafolio-design.jpg",
+        title        : "Mi Portafolio",
+        skill        : ["HTML", "CSS", "TypeScript", "Angular"],
+        date_project : new Date(2023, 9, 5),
+        observation  : "",
+        link_github  : "https://github.com/roraima1986/portafolio",
+        link_website : "",
+        is_work      : true,
+        is_design    : true,
+        is_active    : true,
+      },
+      {
+        id           :8,
+        photo        : "./../../../assets/img/projects/country-app-design.jpg",
+        title        : "Country App",
+        skill        : ["HTML", "CSS", "Bootstrap", "TypeScript", "Angular"],
+        date_project : new Date(2023, 7, 1),
+        observation  : "",
+        link_github  : "https://github.com/roraima1986/country-app",
+        link_website : "",
+        is_work      : true,
+        is_design    : true,
+        is_active    : true,
+      },
+      {
+        id           :7,
+        photo        : "./../../../assets/img/projects/avila-mood.png",
+        title        : "Sistema de Inventario Avila Mood",
+        skill        : ["HTML", "CSS", "Bootstrap",  "JavaScript", "JQuery",  "Python", "Django"],
+        date_project : new Date(2023, 5, 1),
+        observation  : "",
+        link_github  : "https://github.com/roraima1986/software_peluqueria.github.io",
+        link_website : "",
+        is_work      : true,
+        is_design    : false,
+        is_active    : true,
+      },
+      {
+        id           :6,
+        photo        : "./../../../assets/img/projects/panel-control-design.jpg",
+        title        : "Sistema de Control de Pagos OPTICACLOUD",
+        skill        : ["HTML", "CSS", "Bootstrap", "JQuery",  "Python", "Django"],
+        date_project : new Date(2023, 2, 1),
+        observation  : "",
+        link_github  : "https://github.com/roraima1986/clientesOpticacloud",
+        link_website : "",
+        is_work      : true,
+        is_design    : false,
+        is_active    : true,
+      },
+      {
+        id           :5,
+        photo        : "./../../../assets/img/projects/optiaustral-website-design.jpg",
+        title        : "Página Web OptiAustral",
+        skill        : ["HTML", "CSS", "Bootstrap", "JQuery"],
+        date_project : new Date(2022, 9, 1),
+        observation  : "",
+        link_github  : "https://github.com/roraima1986/optiaustral.github.io",
+        link_website : "http://optiaustral.cl/",
+        is_work      : true,
+        is_design    : false,
+        is_active    : true,
+      },
+      {
+        id           :4,
+        photo        : "./../../../assets/img/projects/maqueta-css-flexbox-design.jpg",
+        title        : "Maqueta CSS - Flexbox",
+        skill        : ["HTML", "CSS"],
+        date_project : new Date(2022, 9, 22),
+        observation  : "Master CSS",
+        link_github  : "https://github.com/roraima1986/cssflexbox.github.io",
+        link_website : "https://roraima1986.github.io/cssflexbox.github.io/",
+        is_work      : false,
+        is_design    : true,
+        is_active    : true,
+      },
+      {
+        id           :3,
+        photo        : "./../../../assets/img/projects/animaciones-css-design.jpg",
+        title        : "Animaciones CSS",
+        skill        : ["HTML", "CSS"],
+        date_project : new Date(2022, 7, 10),
+        observation  : "Master CSS",
+        link_github  : "https://github.com/roraima1986/cssanimations.github.io",
+        link_website : "https://roraima1986.github.io/cssanimations.github.io/",
+        is_work      : false,
+        is_design    : true,
+        is_active    : true,
+      },
+      {
+        id           :2,
+        photo        : "./../../../assets/img/projects/jjingenieria-website-design.jpg",
+        title        : "Página Web JJIngeniería",
+        skill        : ["HTML", "CSS", "Bootstrap", "JQuery"],
+        date_project : new Date(2021, 3, 1),
+        observation  : "",
+        link_github  : "https://github.com/roraima1986/jjingenieria.github.io",
+        link_website : "https://jjingenieria.cl/",
+        is_work      : true,
+        is_design    : false,
+        is_active    : true,
+      },
+      {
+        id           :1,
+        photo        : "./../../../assets/img/projects/opticacloud-website-design.jpg",
+        title        : "Página Web OPTICACLOUD",
+        skill        : ["HTML", "CSS", "Bootstrap", "JQuery"],
+        date_project : new Date(2021, 2, 1),
+        observation  : "",
+        link_github  : "https://github.com/roraima1986/opticacloud.github.io",
+        link_website : "https://roraima1986.github.io/opticacloud.github.io/",
+        is_work      : true,
+        is_design    : false,
+        is_active    : true,
+      },
+    ]
   }
 
-  constructor(private http: HttpClient) { }
-
-  getAbout():Observable<Work[]> {
-    return this.http.get<Work[]>(`${this.baseUrl}/work`, httpOptions).pipe(catchError(this.handleError));
+  getAboutMini() {
+    return Promise.resolve(this.getAbout());
   }
 }

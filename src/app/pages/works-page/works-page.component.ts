@@ -14,9 +14,9 @@ export class WorksPageComponent {
   constructor(private workService: WorkService){}
 
   ngOnInit(): void {
-    this.workService.getAbout()
-      .subscribe(
-        work => this.work = work
-      )
+    this.workService.getAboutMini().then((data) => {
+      this.work = data;
+    })
+
   }
 }

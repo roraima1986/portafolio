@@ -1,10 +1,8 @@
-import { Skill } from "./skill.interface";
-
 export interface Work {
   id:number;
   photo?:        string;
   title:         string;
-  skill:         Skill[];
+  skill:         string[];
   date_project:  Date;
   observation?:  string;
   link_github?:  string;

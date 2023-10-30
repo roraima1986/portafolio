@@ -1,20 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { About } from 'src/app/interfaces/about.interface';
-import { AboutService } from 'src/app/services/about.service';
+import { Component } from '@angular/core';
+
 
 @Component({
   selector: 'app-about-page',
   templateUrl: './about-page.component.html',
 })
-export class AboutPageComponent implements OnInit {
-  public about!: About[];
+export class AboutPageComponent  {
 
-  constructor(private aboutService: AboutService){}
-
-  ngOnInit(): void {
-    this.aboutService.getAbout()
-      .subscribe(
-        about => this.about = about
-      )
-  }
 }
