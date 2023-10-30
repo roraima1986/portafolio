@@ -1,6 +1,6 @@
 # Portafolio
 
-Inicio del portafolio: 05/10/2023
+## Descripción General
 
 Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
 
