@@ -9,11 +9,11 @@ export class NavbarComponent  {
 
   // Rutas del navbar
   public routeNavbar: routeNavbar[] = [
-    {route: '', title: 'Inicio', icon: './../../../assets/img/icons/home.svg'},
-    {route: 'trabajos', title: 'Trabajos', icon: './../../../assets/img/icons/folder.svg'},
-    {route: 'resumen', title: 'Resumen', icon: './../../../assets/img/icons/user.svg'},
-    {route: 'disenos', title: 'Diseños', icon: './../../../assets/img/icons/layout.svg'},
-    {route: 'contacto', title: 'Contacto', icon: './../../../assets/img/icons/envelope.svg'},
+    {route: '', title: 'Inicio', icon: 'fa-house'},
+    {route: 'trabajos', title: 'Trabajos', icon: 'fa-folder-open'},
+    {route: 'resumen', title: 'Resumen', icon: 'fa-user'},
+    {route: 'disenos', title: 'Diseños', icon: 'fa-pen-ruler'},
+    {route: 'contacto', title: 'Contacto', icon: 'fa-envelope'},
   ]
   // Navbar visible
   public isNavbarVisible:boolean = true;
@@ -22,3 +22,5 @@ export class NavbarComponent  {
     this.isNavbarVisible = !this.isNavbarVisible;
   }
 }
+
+

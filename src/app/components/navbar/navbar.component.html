@@ -2,7 +2,7 @@
 
   <div class="btn-toggle" (click)="toggleNavbar()">
     <button class="button">
-      <img src="./../../../assets/img/icons/list.svg" alt="toogle">
+      <i class="fa-solid fa-bars"></i>
     </button>
   </div>
 
@@ -10,7 +10,7 @@
     <ul class="navbar">
       <li class="item" *ngFor="let route of routeNavbar">
         <a [routerLink]="route.route">
-          <img [src]="route.icon" [alt]="route.title">
+          <i class="fa-solid {{route.icon}}"></i>
           <span>{{route.title}}</span>
         </a>
       </li>

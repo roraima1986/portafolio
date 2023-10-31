@@ -88,6 +88,10 @@ a {
   text-decoration: none;
 }
 
+i {
+  color: #fff;
+}
+
 .main {
   width: 80%;
   margin: 0 auto;
@@ -213,7 +217,7 @@ a {
       border: 2px solid $blue;
       transition: all 0.5s;
 
-      img {
+      i {
         margin-right: 0.5rem;
       }
     }
