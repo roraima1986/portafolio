@@ -23,7 +23,7 @@ export class WorkService {
       },
       {
         id           :17,
-        photo        : "./../../../assets/img/projects/column-preview-card-design.jpg",
+        photo        : "./assets/img/projects/column-preview-card-design.jpg",
         title        : "3-column preview card component",
         skill        : ["HTML", "CSS"],
         date_project : new Date(2023, 9, 25),
@@ -36,7 +36,7 @@ export class WorkService {
       },
       {
         id           :16,
-        photo        : "./../../../assets/img/projects/stats-preview-design.jpg",
+        photo        : "./assets/img/projects/stats-preview-design.jpg",
         title        : "Stats preview card component",
         skill        : ["HTML", "CSS"],
         date_project : new Date(2023, 9, 24),
@@ -49,7 +49,7 @@ export class WorkService {
       },
       {
         id           :15,
-        photo        : "./../../../assets/img/projects/order-summary-card-design.jpg",
+        photo        : "./assets/img/projects/order-summary-card-design.jpg",
         title        : "Order Summary Card",
         skill        : ["HTML", "CSS"],
         date_project : new Date(2023, 9, 16),
@@ -62,7 +62,7 @@ export class WorkService {
       },
       {
         id           :14,
-        photo        : "./../../../assets/img/projects/nft-preview-card-design.jpg",
+        photo        : "./assets/img/projects/nft-preview-card-design.jpg",
         title        : "NFT Preview Card",
         skill        : ["HTML", "CSS"],
         date_project : new Date(2023, 9, 13),
@@ -75,7 +75,7 @@ export class WorkService {
       },
       {
         id           :13,
-        photo        : "./../../../assets/img/projects/interactive-rating-component-design.jpg",
+        photo        : "./assets/img/projects/interactive-rating-component-design.jpg",
         title        : "Interactive Rating",
         skill        : ["HTML", "CSS", "JavaScript"],
         date_project : new Date(2023, 9, 10),
@@ -88,7 +88,7 @@ export class WorkService {
       },
       {
         id           :12,
-        photo        : "./../../../assets/img/projects/product-preview-card-design.jpg",
+        photo        : "./assets/img/projects/product-preview-card-design.jpg",
         title        : "Product Preview Card",
         skill        : ["HTML", "CSS"],
         date_project : new Date(2023, 9, 5),
@@ -101,7 +101,7 @@ export class WorkService {
       },
       {
         id           :11,
-        photo        : "./../../../assets/img/projects/results-summary-design.jpg",
+        photo        : "./assets/img/projects/results-summary-design.jpg",
         title        : "Results summary",
         skill        : ["HTML", "CSS"],
         date_project : new Date(2023, 9, 3),
@@ -114,7 +114,7 @@ export class WorkService {
       },
       {
         id           :10,
-        photo        : "./../../../assets/img/projects/code-qr-design.jpg",
+        photo        : "./assets/img/projects/code-qr-design.jpg",
         title        : "QR code",
         skill        : ["HTML", "CSS"],
         date_project : new Date(2023, 9, 1),
@@ -127,7 +127,7 @@ export class WorkService {
       },
       {
         id           :9,
-        photo        : "./../../../assets/img/projects/portafolio-design.jpg",
+        photo        : "./assets/img/projects/portafolio-design.jpg",
         title        : "Mi Portafolio",
         skill        : ["HTML", "CSS", "TypeScript", "Angular"],
         date_project : new Date(2023, 9, 5),
@@ -140,7 +140,7 @@ export class WorkService {
       },
       {
         id           :8,
-        photo        : "./../../../assets/img/projects/country-app-design.jpg",
+        photo        : "./assets/img/projects/country-app-design.jpg",
         title        : "Country App",
         skill        : ["HTML", "CSS", "Bootstrap", "TypeScript", "Angular"],
         date_project : new Date(2023, 7, 1),
@@ -153,7 +153,7 @@ export class WorkService {
       },
       {
         id           :7,
-        photo        : "./../../../assets/img/projects/avila-mood.png",
+        photo        : "./assets/img/projects/avila-mood.png",
         title        : "Sistema de Inventario Avila Mood",
         skill        : ["HTML", "CSS", "Bootstrap",  "JavaScript", "JQuery",  "Python", "Django"],
         date_project : new Date(2023, 5, 1),
@@ -166,7 +166,7 @@ export class WorkService {
       },
       {
         id           :6,
-        photo        : "./../../../assets/img/projects/panel-control-design.jpg",
+        photo        : "./assets/img/projects/panel-control-design.jpg",
         title        : "Sistema de Control de Pagos OPTICACLOUD",
         skill        : ["HTML", "CSS", "Bootstrap", "JQuery",  "Python", "Django"],
         date_project : new Date(2023, 2, 1),
@@ -179,7 +179,7 @@ export class WorkService {
       },
       {
         id           :5,
-        photo        : "./../../../assets/img/projects/optiaustral-website-design.jpg",
+        photo        : "./assets/img/projects/optiaustral-website-design.jpg",
         title        : "Página Web OptiAustral",
         skill        : ["HTML", "CSS", "Bootstrap", "JQuery"],
         date_project : new Date(2022, 9, 1),
@@ -192,7 +192,7 @@ export class WorkService {
       },
       {
         id           :4,
-        photo        : "./../../../assets/img/projects/maqueta-css-flexbox-design.jpg",
+        photo        : "./assets/img/projects/maqueta-css-flexbox-design.jpg",
         title        : "Maqueta CSS - Flexbox",
         skill        : ["HTML", "CSS"],
         date_project : new Date(2022, 9, 22),
@@ -205,7 +205,7 @@ export class WorkService {
       },
       {
         id           :3,
-        photo        : "./../../../assets/img/projects/animaciones-css-design.jpg",
+        photo        : "./assets/img/projects/animaciones-css-design.jpg",
         title        : "Animaciones CSS",
         skill        : ["HTML", "CSS"],
         date_project : new Date(2022, 7, 10),
@@ -218,7 +218,7 @@ export class WorkService {
       },
       {
         id           :2,
-        photo        : "./../../../assets/img/projects/jjingenieria-website-design.jpg",
+        photo        : "./assets/img/projects/jjingenieria-website-design.jpg",
         title        : "Página Web JJIngeniería",
         skill        : ["HTML", "CSS", "Bootstrap", "JQuery"],
         date_project : new Date(2021, 3, 1),
@@ -231,7 +231,7 @@ export class WorkService {
       },
       {
         id           :1,
-        photo        : "./../../../assets/img/projects/opticacloud-website-design.jpg",
+        photo        : "./assets/img/projects/opticacloud-website-design.jpg",
         title        : "Página Web OPTICACLOUD",
         skill        : ["HTML", "CSS", "Bootstrap", "JQuery"],
         date_project : new Date(2021, 2, 1),
