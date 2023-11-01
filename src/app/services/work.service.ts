@@ -10,7 +10,7 @@ export class WorkService {
     return [
       {
         id           :18,
-        photo        : "./../../../assets/img/projects/profile-card-design.jpg",
+        photo        : "./assets/img/projects/profile-card-design.jpg",
         title        : "Profile card component",
         skill        : ["HTML", "CSS"],
         date_project : new Date(2023, 9, 29),
