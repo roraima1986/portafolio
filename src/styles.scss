@@ -441,6 +441,10 @@ i {
 }
 
 @media screen and (max-width: 900px) {
+  .about .figure img {
+    width: 70%!important;
+  }
+
   .contact {
     .info {
       justify-content: space-between;
@@ -463,9 +467,15 @@ i {
     }
   }
 
+
+
 }
 
 @media screen and (max-width:630px) {
+  .about .figure img {
+    width: 100%!important;
+  }
+
   .works-design {
     .grid-container {
       grid-template-columns: repeat(1, 1fr);

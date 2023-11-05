@@ -9,6 +9,19 @@ export class WorkService {
   getAbout() {
     return [
       {
+        id           :19,
+        photo        : "./assets/img/projects/faq-accordion-design.jpg",
+        title        : "FAQ accordion card",
+        skill        : ["HTML", "CSS", "JavaScript"],
+        date_project : new Date(2023, 10, 3),
+        observation  : "Desafio de Frontend Mentor",
+        link_github  : "https://github.com/roraima1986/faq-accordion.github.io",
+        link_website : "https://roraima1986.github.io/faq-accordion.github.io/",
+        is_work      : false,
+        is_design    : true,
+        is_active    : true,
+      },
+      {
         id           :18,
         photo        : "./assets/img/projects/profile-card-design.jpg",
         title        : "Profile card component",
