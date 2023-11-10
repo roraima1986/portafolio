@@ -9,18 +9,17 @@ export class NavbarComponent  {
 
   // Rutas del navbar
   public routeNavbar: routeNavbar[] = [
-    {route: '', title: 'Inicio', icon: 'fa-house'},
-    {route: 'trabajos', title: 'Trabajos', icon: 'fa-folder-open'},
-    {route: 'resumen', title: 'Resumen', icon: 'fa-user'},
-    {route: 'disenos', title: 'Diseños', icon: 'fa-pen-ruler'},
+    {route: 'inicio', title: 'Inicio', icon: 'fa-house'},
+    {route: 'sobre-mi', title: 'Sobre mí', icon: 'fa-user'},
+    {route: 'portafolio', title: 'Portafolio', icon: 'fa-briefcase'},
     {route: 'contacto', title: 'Contacto', icon: 'fa-envelope'},
   ]
   // Navbar visible
-  public isNavbarVisible:boolean = true;
+  /*public isNavbarVisible:boolean = true;
 
   toggleNavbar():void {
     this.isNavbarVisible = !this.isNavbarVisible;
-  }
+  }*/
 }
 
 

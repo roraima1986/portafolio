@@ -23,7 +23,7 @@ body {
   font-family: $text;
 }
 
-.circles {
+/*.circles {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -60,7 +60,7 @@ body {
     top: 0%;
     right: 0%;
   }
-}
+}*/
 
 h1 {
   font-family: $title;
@@ -77,7 +77,7 @@ h2 {
 p {
   font-family: $text;
   font-weight: 400;
-  font-size: 1remrem;
+  font-size: 1rem;
 }
 
 li{
@@ -115,7 +115,7 @@ i {
 .header {
   position: absolute;
 
-  .btn-toggle {
+  /*.btn-toggle {
     position: fixed;
     display: block;
     top: 0.5rem;
@@ -132,7 +132,7 @@ i {
       margin-top: 0.5rem;
       cursor: pointer;
     }
-  }
+  }*/
 
   .nav {
     position: fixed;
@@ -143,7 +143,6 @@ i {
     align-items: center;
     top: 0;
     left: 0;
-    bottom: 0;
     padding: 1rem;
     min-height: 100vh;
     transition: all 1s;
@@ -154,6 +153,42 @@ i {
       display: block;
 
       .item {
+        margin: 0.5rem;
+
+        a {
+
+          i {
+            border: 2px solid $blue;
+            padding: 1rem;
+            border-radius: 50%;
+            transition: all 0.5s;
+          }
+
+          span {
+            margin-left: 0.5rem;
+            color: $blue;
+            opacity: 0!important;
+            transition: all 0.5s;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .item:hover {
+        a {
+
+          i {
+            background-color:$blue;
+          }
+
+          span {
+            opacity: 1!important;
+          }
+
+        }
+      }
+
+      /*.item {
         margin: 0.5rem;
         border-radius: 2rem;
         border: 2px solid $blue;
@@ -172,14 +207,14 @@ i {
         }
       }
 
-      li:hover {
+      .item:hover {
         background-color: $blue;
-      }
+      }*/
     }
   }
 }
 
-.hide {
+/*.hide {
   transform: translateX(-100%);
   transition: all 1s;
 }
@@ -188,7 +223,7 @@ i {
   transform: translateX(0%);
   display: flex!important;
   transition: all 1s;
-}
+}*/
 
 /* Inicio */
 .home {
@@ -228,11 +263,20 @@ i {
   }
 }
 
-/* Trabajos */
-.works-design {
-  h2 {
+/* Titulos de sección */
+.section-title {
+
+  .section-title-h2 {
+    top: 5rem;
+    font-family: $subtitle;
+    font-weight: 400;
+    font-size: 2rem;
     margin-bottom: 3rem;
   }
+}
+
+/* Portafolio */
+.portfolio-design {
 
   .grid-container {
     width: 100%;
@@ -280,8 +324,8 @@ i {
 
           .project-item {
             background-color: $blue;
-            padding: 0.2rem;
-            border-radius: 0.5rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 1rem;
             font-size: 0.8rem;
             margin-right: 0.5rem;
             margin-bottom: 0.5rem;
@@ -295,6 +339,7 @@ i {
 
         .observation {
           color: $blue;
+          font-size: 0.7rem;
         }
 
         .buttons {
@@ -312,6 +357,11 @@ i {
             border: 2px solid $blue;
             margin-left: 0.5rem;
             cursor: pointer;
+            transition: all 0.5s;
+          }
+
+          .button:hover {
+            background-color: $blue;
           }
         }
 
@@ -328,13 +378,127 @@ i {
 /* Resumen */
 
 .about {
+  .article-about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+
+    .about-image {
+      flex-basis: 30%;
+
+      .image {
+        width: 100%;
+        border-radius: 2rem;
+      }
+    }
+
+    .about-description {
+      flex-basis: 70%;
+
+      .description {
+        line-height: 1.5rem;
+      }
+    }
+  }
+
+  .about-subtitle {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    color: $gray;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .resume-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    .resume-time {
+      margin-right: 2rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      text-align: right;
+      flex-basis: 20%;
+
+      .resume-year {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    .divider {
+      position: absolute;
+      top: 0;
+      left: 22%;
+      height: 100%;
+      width: 1px;
+      background-color: $white;
+    }
+
+    .divider::before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: -10px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: $blue;
+    }
+
+    .divider::after {
+      content: '';
+      position: absolute;
+      top: 15px;
+      left: -5px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: white;
+    }
+
+    .resume-profession {
+      flex-basis: 80%;
+      margin-left: 2rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+
+      .resume-title {
+        margin-bottom: 0.5rem;
+      }
+
+      .resume-description {
+        line-height: 1.5rem;
+      }
+    }
+  }
+
+  .skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+
+    .skill {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem 1rem;
+      background-color: $blue;
+      border-radius: 2rem;
+    }
+  }
+}
+
+/*.about {
 
   .article {
     text-align: center;
-
-    h2 {
-      margin-bottom: 3rem;
-    }
 
     .figure {
       text-align: center;
@@ -363,24 +527,24 @@ i {
       justify-content: center;
       flex-wrap: wrap;
       align-items: center;
+      gap: 1rem;
 
       li {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 1rem;
+        padding: 0.5rem 1rem;
+        background-color: $blue;
+        border-radius: 2rem;
       }
     }
   }
-}
+}*/
 
 /* Contacto */
 
 .contact {
-  h2 {
-    margin-bottom: 4rem;
-  }
 
   .info {
     display: flex;
@@ -399,18 +563,34 @@ i {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 3rem;
-        height: 3rem;
+        width: 5rem;
+        height: 5rem;
         border-radius: 50%;
         border: 2px solid $blue;
+        font-size: 2.5rem;
       }
 
       h3 {
+        font-size: 1.5rem;
+        font-weight: 400;
         margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 1.25rem;
       }
 
       a {
         margin-right: 0.5rem;
+      }
+
+      .social-icon {
+        font-size: 2rem;
+        transition: all 0.5s;
+      }
+
+      .social-icon:hover {
+        color: $blue;
       }
     }
   }
@@ -428,62 +608,52 @@ i {
 
 /* RESPONSIVE  */
 @media screen and (max-width: 1440px){
-  .section {
+  /*.section {
     padding-left: 6rem;
-  }
+  }*/
 
 
-  .works-design {
+  .portfolio-design {
     .grid-container {
       grid-template-columns: repeat(2, 1fr);
     }
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 990px) {
   .about .figure img {
-    width: 70%!important;
+    width: 80%!important;
   }
 
   .contact {
     .info {
-      justify-content: space-between;
+      flex-direction: column;
+
+      .information {
+        margin-bottom: 2rem;
+        justify-content: start;
+      }
     }
   }
 }
 
 @media screen and (max-width: 768px) {
-  .main {
-    width: 95%;
-  }
-
   .section {
-    padding-left: 0;
+    padding-left: 5rem;
   }
 
-  .header {
-    .nav {
-      background-color: $black;
-    }
-  }
-
-
-
-}
-
-@media screen and (max-width:630px) {
-  .about .figure img {
-    width: 100%!important;
-  }
-
-  .works-design {
+  .portfolio-design {
     .grid-container {
       grid-template-columns: repeat(1, 1fr);
     }
   }
 }
 
-@media screen and (max-width:499px) {
+@media screen and (max-width:685px) {
+  .main {
+    width: 98%;
+  }
+
   h1 {
     font-size: 2.75rem;
   }
@@ -498,16 +668,14 @@ i {
     }
   }
 
-  .contact {
-    .info {
-      flex-direction: column;
-
-      .information {
-        margin-bottom: 1rem;
-        justify-content: start;
-      }
-    }
+  .about .figure img {
+    width: 95%!important;
   }
+
+
+}
+
+@media screen and (max-width:499px) {
 
   .footer {
     p {
@@ -516,5 +684,52 @@ i {
   }
 }
 
+@media screen and (max-width:480px) {
+  .contact {
+
+    .info {
+
+      .information {
+        .icon {
+          width: 4rem;
+          height: 4rem;
+          font-size: 2rem;
+        }
+
+        h3,
+        p,
+        .social-icon {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+
+  }
+}
+
+@media screen and (max-width:410px) {
+  .contact {
+
+    .info {
+
+      .information {
+        .icon {
+          width: 3rem;
+          height: 3rem;
+          font-size: 1.5rem;
+        }
+
+        h3,
+        p,
+        .social-icon {
+          font-size: 1rem;
+        }
+      }
+    }
+
+
+  }
+}
 
 

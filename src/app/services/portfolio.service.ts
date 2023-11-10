@@ -1,12 +1,11 @@
-
 import { Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
-export class WorkService {
+export class PortfolioService {
 
-  getAbout() {
+  getPortfolio() {
     return [
       {
         id           :19,
@@ -17,8 +16,6 @@ export class WorkService {
         observation  : "Desafio de Frontend Mentor",
         link_github  : "https://github.com/roraima1986/faq-accordion.github.io",
         link_website : "https://roraima1986.github.io/faq-accordion.github.io/",
-        is_work      : false,
-        is_design    : true,
         is_active    : true,
       },
       {
@@ -30,8 +27,6 @@ export class WorkService {
         observation  : "Desafio de Frontend Mentor",
         link_github  : "https://github.com/roraima1986/profile-card.github.io",
         link_website : "https://roraima1986.github.io/profile-card.github.io/",
-        is_work      : false,
-        is_design    : true,
         is_active    : true,
       },
       {
@@ -43,8 +38,6 @@ export class WorkService {
         observation  : "Desafio de Frontend Mentor",
         link_github  : "https://github.com/roraima1986/column-preview-card.github.io",
         link_website : "https://roraima1986.github.io/column-preview-card.github.io/",
-        is_work      : false,
-        is_design    : true,
         is_active    : true,
       },
       {
@@ -56,8 +49,6 @@ export class WorkService {
         observation  : "Desafio de Frontend Mentor",
         link_github  : "https://github.com/roraima1986/stats-preview-card.github.io",
         link_website : "https://roraima1986.github.io/stats-preview-card.github.io/",
-        is_work      : false,
-        is_design    : true,
         is_active    : true,
       },
       {
@@ -69,8 +60,6 @@ export class WorkService {
         observation  : "Desafio de Frontend Mentor",
         link_github  : "https://github.com/roraima1986/order-summary-card.github.io",
         link_website : "https://roraima1986.github.io/order-summary-card.github.io/",
-        is_work      : false,
-        is_design    : true,
         is_active    : true,
       },
       {
@@ -82,8 +71,6 @@ export class WorkService {
         observation  : "Desafio de Frontend Mentor",
         link_github  : "https://github.com/roraima1986/nft-preview-card.github.io",
         link_website : "https://roraima1986.github.io/nft-preview-card.github.io/",
-        is_work      : false,
-        is_design    : true,
         is_active    : true,
       },
       {
@@ -95,8 +82,6 @@ export class WorkService {
         observation  : "Desafio de Frontend Mentor",
         link_github  : "https://github.com/roraima1986/interactive-rating.github.io",
         link_website : "https://roraima1986.github.io/interactive-rating.github.io/",
-        is_work      : false,
-        is_design    : true,
         is_active    : true,
       },
       {
@@ -108,8 +93,6 @@ export class WorkService {
         observation  : "Desafio de Frontend Mentor",
         link_github  : "https://github.com/roraima1986/productcard.github.io",
         link_website : "https://roraima1986.github.io/productcard.github.io/",
-        is_work      : false,
-        is_design    : true,
         is_active    : true,
       },
       {
@@ -121,8 +104,6 @@ export class WorkService {
         observation  : "Desafio de Frontend Mentor",
         link_github  : "https://github.com/roraima1986/resultssummary.github.io",
         link_website : "https://roraima1986.github.io/resultssummary.github.io/",
-        is_work      : false,
-        is_design    : true,
         is_active    : true,
       },
       {
@@ -134,8 +115,6 @@ export class WorkService {
         observation  : "Desafio de Frontend Mentor",
         link_github  : "https://github.com/roraima1986/qrcode.github.io",
         link_website : "https://roraima1986.github.io/qrcode.github.io/",
-        is_work      : false,
-        is_design    : true,
         is_active    : true,
       },
       {
@@ -147,8 +126,6 @@ export class WorkService {
         observation  : "",
         link_github  : "https://github.com/roraima1986/portafolio",
         link_website : "",
-        is_work      : true,
-        is_design    : true,
         is_active    : true,
       },
       {
@@ -160,8 +137,6 @@ export class WorkService {
         observation  : "",
         link_github  : "https://github.com/roraima1986/country-app",
         link_website : "",
-        is_work      : true,
-        is_design    : true,
         is_active    : true,
       },
       {
@@ -173,8 +148,6 @@ export class WorkService {
         observation  : "",
         link_github  : "https://github.com/roraima1986/software_peluqueria.github.io",
         link_website : "",
-        is_work      : true,
-        is_design    : false,
         is_active    : true,
       },
       {
@@ -186,8 +159,6 @@ export class WorkService {
         observation  : "",
         link_github  : "https://github.com/roraima1986/clientesOpticacloud",
         link_website : "",
-        is_work      : true,
-        is_design    : false,
         is_active    : true,
       },
       {
@@ -199,8 +170,6 @@ export class WorkService {
         observation  : "",
         link_github  : "https://github.com/roraima1986/optiaustral.github.io",
         link_website : "http://optiaustral.cl/",
-        is_work      : true,
-        is_design    : false,
         is_active    : true,
       },
       {
@@ -212,8 +181,6 @@ export class WorkService {
         observation  : "Master CSS",
         link_github  : "https://github.com/roraima1986/cssflexbox.github.io",
         link_website : "https://roraima1986.github.io/cssflexbox.github.io/",
-        is_work      : false,
-        is_design    : true,
         is_active    : true,
       },
       {
@@ -225,8 +192,6 @@ export class WorkService {
         observation  : "Master CSS",
         link_github  : "https://github.com/roraima1986/cssanimations.github.io",
         link_website : "https://roraima1986.github.io/cssanimations.github.io/",
-        is_work      : false,
-        is_design    : true,
         is_active    : true,
       },
       {
@@ -238,8 +203,6 @@ export class WorkService {
         observation  : "",
         link_github  : "https://github.com/roraima1986/jjingenieria.github.io",
         link_website : "https://jjingenieria.cl/",
-        is_work      : true,
-        is_design    : false,
         is_active    : true,
       },
       {
@@ -251,14 +214,12 @@ export class WorkService {
         observation  : "",
         link_github  : "https://github.com/roraima1986/opticacloud.github.io",
         link_website : "https://roraima1986.github.io/opticacloud.github.io/",
-        is_work      : true,
-        is_design    : false,
         is_active    : true,
       },
     ]
   }
 
-  getAboutMini() {
-    return Promise.resolve(this.getAbout());
+  getportfolioMini() {
+    return Promise.resolve(this.getPortfolio());
   }
 }

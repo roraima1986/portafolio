@@ -1,12 +1,15 @@
 <header class="header">
 
+  <!--
   <div class="btn-toggle" (click)="toggleNavbar()">
     <button class="button">
       <i class="fa-solid fa-bars"></i>
     </button>
   </div>
+  -->
 
-  <nav class="nav" [ngClass]="isNavbarVisible ? 'show' : 'hide'">
+  <!--<nav class="nav" [ngClass]="isNavbarVisible ? 'show' : 'hide'">-->
+  <nav class="nav">
     <ul class="navbar">
       <li class="item" *ngFor="let route of routeNavbar">
         <a [routerLink]="route.route">

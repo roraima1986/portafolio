@@ -1,10 +1,15 @@
-<section class="section works-design" id="design">
-  <h2>Diseños</h2>
+<section class="section portfolio-design" id="portfolio">
+  <header class="section-title">
+    <h2 class="section-title-h2">Portafolio</h2>
+  </header>
+
 
   <div class="grid-container">
-    <ng-container *ngFor="let obj of work">
-      <ng-container *ngIf="obj.is_design && obj.is_active">
-        <article class="article" >
+    <ng-container *ngFor="let obj of portfolio">
+
+      <ng-container *ngIf="obj.is_active">
+        <article class="article">
+
           <div class="img-project">
             <img class="img" [src]="obj.photo" [alt]="obj.title">
           </div>
@@ -29,12 +34,17 @@
               </a>
             </div>
           </div>
-        </article>
+
+
+      </article>
       </ng-container>
+
     </ng-container>
 
 
-  </div>
 
+  </div>
 </section>
+
+
 

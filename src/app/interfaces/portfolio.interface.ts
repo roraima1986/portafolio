@@ -1,4 +1,4 @@
-export interface Work {
+export interface Portfolio {
   id:number;
   photo?:        string;
   title:         string;
@@ -7,8 +7,6 @@ export interface Work {
   observation?:  string;
   link_github?:  string;
   link_website?: string;
-  is_work:       boolean;
-  is_design:     boolean;
   is_active:     boolean;
 }
 

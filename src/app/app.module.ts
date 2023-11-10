@@ -7,9 +7,8 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { AboutPageComponent } from './pages/about-page/about-page.component';
-import { WorksPageComponent } from './pages/works-page/works-page.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
-import { DesignPageComponent } from './pages/design-page/design-page.component';
+import { PortfolioPageComponent } from './pages/portfolio-page/portfolio-page.component';
 
 @NgModule({
   declarations: [
@@ -17,9 +16,8 @@ import { DesignPageComponent } from './pages/design-page/design-page.component';
     NavbarComponent,
     HomePageComponent,
     AboutPageComponent,
-    WorksPageComponent,
     ContactPageComponent,
-    DesignPageComponent
+    PortfolioPageComponent
   ],
   imports: [
     BrowserModule,

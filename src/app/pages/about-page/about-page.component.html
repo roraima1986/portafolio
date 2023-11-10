@@ -1,62 +1,91 @@
 <section class="section about" id="about" >
 
+  <header class="section-title">
+    <h2 class="section-title-h2">Sobre mí</h2>
+  </header>
+
   <article class="article">
 
-    <h2>Resumen</h2>
+    <div class="article-about">
+      <div class="about-image">
+        <img src="./assets/img/avatar/roraima.jpeg" class="image" alt="Roraima">
+      </div>
 
-    <figure class="figure">
-      <img src="./assets/img/avatar/roraima.jpeg" alt="Roraima">
-    </figure>
+      <div class="about-description">
+        <p class="description">
+          Soy Desarrolladora Frontend con experiencia en el desarrollo de aplicaciones web utilizando Angular y tengo una fuerte determinación para ampliar mis habilidades aprendiendo React. Me gusta la creación de interfaces de usuario atractivas y funcionales, con un enfoque en el rendimiento y la usabilidad. Busco oportunidades para contribuir a proyectos web desafiantes y continuar mi desarrollo profesional.
+        </p>
+      </div>
+    </div>
 
-    <p class="description">Soy Desarrolladora Frontend con experiencia en el desarrollo de aplicaciones web utilizando Angular y tengo una fuerte determinación para ampliar mis habilidades aprendiendo React. Me gusta la creación de interfaces de usuario atractivas y funcionales, con un enfoque en el rendimiento y la usabilidad. Busco oportunidades para contribuir a proyectos web desafiantes y continuar mi desarrollo profesional.</p>
+    <h3 class="about-subtitle">Experiencia</h3>
 
-    <h3>Habilidades</h3>
+    <div class="resume-container">
+      <div class="resume-time">
+        <span class="resume-year">Oct 2023 - Actualmente</span>
+        <span class="resume-company">Colabora</span>
+      </div>
+      <div class="divider"></div>
+      <div class="resume-profession">
+        <h4 class="resume-title">Desarrollador Frontend Independiente</h4>
+        <p class="resume-description">
+          Desarrollo de software verde colaborativo.
+        </p>
+      </div>
+    </div>
 
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>Bootstrap</li>
-      <li>TypeScript</li>
-      <li>Angular</li>
-      <li>Python</li>
-      <li>Django</li>
-      <li>Django REST Framework</li>
+    <div class="resume-container">
+      <div class="resume-time">
+        <span class="resume-year">Nov 2021 - Oct 2023</span>
+        <span class="resume-company">Informática Marco Moya EIRL</span>
+      </div>
+      <div class="divider"></div>
+      <div class="resume-profession">
+        <h4 class="resume-title">Desarrolador Frontend</h4>
+        <p class="resume-description">
+          Elaboración de sitios web a pymes y pequeñas empresas.
+        </p>
+      </div>
+    </div>
+
+    <h3 class="about-subtitle">Estudios</h3>
+
+    <div class="resume-container">
+      <div class="resume-time">
+        <span class="resume-year">2013</span>
+        <span class="resume-company">I.U.P. "Santiago Mariño" Extensión Maturín</span>
+      </div>
+      <div class="divider"></div>
+      <div class="resume-profession">
+        <h4 class="resume-title">Ingeniero de Sistemas</h4>
+        <p class="resume-description"></p>
+      </div>
+    </div>
+
+    <h3 class="about-subtitle">Certificados</h3>
+
+    <div class="certificate">
+      <div class="container-certificate">
+        <div >
+
+        </div>
+      </div>
+    </div>
+
+    <h3 class="about-subtitle">Habilidades</h3>
+
+    <ul class="skills">
+      <li class="skill">HTML</li>
+      <li class="skill">CSS</li>
+      <li class="skill">JavaScript</li>
+      <li class="skill">Bootstrap</li>
+      <li class="skill">TypeScript</li>
+      <li class="skill">Angular</li>
+      <li class="skill">React</li>
+      <li class="skill">Python</li>
+      <li class="skill">Django</li>
+      <li class="skill">Django REST Framework</li>
     </ul>
   </article>
-
-
-
-
-
-
 </section>
-
-<!--<section class="section about" id="about" >
-
-  <article class="article" *ngFor="let obj of about">
-
-    <ng-container *ngIf="obj.is_published">
-
-      <h2>Resumen</h2>
-
-      <figure class="figure">
-        <img [src]="obj.photo" [alt]="obj.name">
-      </figure>
-
-      <p>{{obj.description}}</p>
-
-      <h3>Habilidades</h3>
-
-      <ul>
-        <li *ngFor="let item of obj.skill">
-          {{item.name}}
-        </li>
-      </ul>
-    </ng-container>
-
-  </article>
-
-</section>-->
-
 
