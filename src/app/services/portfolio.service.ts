@@ -8,6 +8,17 @@ export class PortfolioService {
   getPortfolio() {
     return [
       {
+        id           :20,
+        photo        : "./assets/img/projects/portfolio2-design.jpg",
+        title        : "Portfolio Design",
+        skill        : ["HTML", "CSS"],
+        date_project : new Date(2023, 10, 10),
+        observation  : "",
+        link_github  : "https://github.com/roraima1986/portfolio-design.github.io",
+        link_website : "https://roraima1986.github.io/portfolio-design.github.io/",
+        is_active    : true,
+      },
+      {
         id           :19,
         photo        : "./assets/img/projects/faq-accordion-design.jpg",
         title        : "FAQ accordion card",

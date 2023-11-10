@@ -115,25 +115,6 @@ i {
 .header {
   position: absolute;
 
-  /*.btn-toggle {
-    position: fixed;
-    display: block;
-    top: 0.5rem;
-    left: 1rem;
-    z-index:1000;
-
-
-    .button {
-      background-color: $black;
-      width: 3rem;
-      height: 3rem;
-      border-radius: 50%;
-      border: 2px solid $blue;
-      margin-top: 0.5rem;
-      cursor: pointer;
-    }
-  }*/
-
   .nav {
     position: fixed;
     display: flex;
@@ -188,42 +169,11 @@ i {
         }
       }
 
-      /*.item {
-        margin: 0.5rem;
-        border-radius: 2rem;
-        border: 2px solid $blue;
-        transition: all 0.5s;
 
-        a {
-          display: flex;
-          padding: 1rem;
-          align-items: center;
-          margin-left: 0.5rem;
-          color: $white;
-
-          span {
-            margin-left: 0.5rem;
-          }
-        }
-      }
-
-      .item:hover {
-        background-color: $blue;
-      }*/
     }
   }
 }
 
-/*.hide {
-  transform: translateX(-100%);
-  transition: all 1s;
-}
-
-.show {
-  transform: translateX(0%);
-  display: flex!important;
-  transition: all 1s;
-}*/
 
 /* Inicio */
 .home {
@@ -272,106 +222,6 @@ i {
     font-weight: 400;
     font-size: 2rem;
     margin-bottom: 3rem;
-  }
-}
-
-/* Portafolio */
-.portfolio-design {
-
-  .grid-container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 2rem;
-    row-gap: 2rem;
-    justify-content: space-between;
-
-    .article{
-      background-color: black;
-      box-shadow: 0px 0px 2px rgba(102, 102, 102, 0.5);
-      overflow: hidden;
-      border-radius: 1rem;
-
-      .img-project {
-        display: flex;
-        width: 100%;
-        overflow: hidden;
-        transition: all 0.5s ease;
-
-        .img {
-          width: 100%;
-          height: 12rem;
-          border:none;
-          transition: all 0.5s ease;
-        }
-
-      }
-
-      .project {
-        display: flex;
-        flex-direction: column;
-        justify-content:space-between;
-        padding: 1rem;
-
-        .project-title {
-          color: $gray;
-          margin-bottom: 0.5rem;
-        }
-
-        .project-items {
-          display: flex;
-          flex-wrap: wrap;
-
-          .project-item {
-            background-color: $blue;
-            padding: 0.2rem 0.5rem;
-            border-radius: 1rem;
-            font-size: 0.8rem;
-            margin-right: 0.5rem;
-            margin-bottom: 0.5rem;
-          }
-        }
-
-        p {
-          font-size: 0.9rem;
-          line-height: 1.5rem;
-        }
-
-        .observation {
-          color: $blue;
-          font-size: 0.7rem;
-        }
-
-        .buttons {
-          display: flex;
-          justify-content: flex-end;
-
-          .button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: $black;
-            width: 3rem;
-            height: 3rem;
-            border-radius: 50%;
-            border: 2px solid $blue;
-            margin-left: 0.5rem;
-            cursor: pointer;
-            transition: all 0.5s;
-          }
-
-          .button:hover {
-            background-color: $blue;
-          }
-        }
-
-      }
-    }
-
-    .article:hover .img {
-      transform: scale(1.1);
-    }
-
   }
 }
 
@@ -476,6 +326,53 @@ i {
     }
   }
 
+  .certificates {
+
+    .container-certificates {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 2rem;
+
+      .certificates-certificate {
+        flex-basis: calc(50% - 1rem);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+
+        .certificate-image {
+          flex-basis: 30%;
+
+          .image {
+            width: 100%;
+            border-radius: 1rem;
+          }
+        }
+
+        .certificate-description {
+          flex-basis: 70%;
+          margin-left: 1rem;
+
+          .certificate-title {
+            margin-bottom: 0.5rem;
+          }
+
+          .certificate-id {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+          }
+
+          .certificate-date {
+            display: block;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+
   .skills {
     display: flex;
     justify-content: center;
@@ -541,6 +438,110 @@ i {
     }
   }
 }*/
+
+
+/* Portafolio */
+.portfolio-design {
+
+  .grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+    justify-content: space-between;
+
+    .article{
+      background-color: black;
+      box-shadow: 0px 0px 2px rgba(102, 102, 102, 0.5);
+      overflow: hidden;
+      border-radius: 1rem;
+
+      .img-project {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+        transition: all 0.5s ease;
+
+        .img {
+          width: 100%;
+          height: 10rem;
+          border:none;
+          transition: all 0.5s ease;
+        }
+
+      }
+
+      .project {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        padding: 1rem;
+
+        .project-title {
+          color: $gray;
+          margin-bottom: 0.5rem;
+        }
+
+        .project-items {
+          display: flex;
+          flex-wrap: wrap;
+
+          .project-item {
+            background-color: $blue;
+            padding: 0.2rem 0.5rem;
+            border-radius: 1rem;
+            font-size: 0.8rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+          }
+        }
+
+        p {
+          font-size: 0.9rem;
+          line-height: 1.5rem;
+        }
+
+        .observation {
+          color: $blue;
+          font-size: 0.7rem;
+        }
+
+        .buttons {
+          display: flex;
+          justify-content: flex-end;
+
+          .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $black;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            border: 2px solid $blue;
+            margin-left: 0.5rem;
+            cursor: pointer;
+            transition: all 0.5s;
+          }
+
+          .button:hover {
+            background-color: $blue;
+          }
+        }
+
+      }
+    }
+
+    .article:hover .img {
+      transform: scale(1.1);
+    }
+
+  }
+}
+
 
 /* Contacto */
 
