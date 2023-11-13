@@ -6,11 +6,11 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { PortfolioPageComponent } from './pages/portfolio-page/portfolio-page.component';
 
 const routes: Routes = [
-  {path: 'inicio', component: HomePageComponent},
+  {path: 'index', component: HomePageComponent},
   {path: 'sobre-mi', component: AboutPageComponent},
   {path: 'portafolio', component: PortfolioPageComponent},
   {path: 'contacto', component: ContactPageComponent},
-  {path: '**', redirectTo:'inicio'},
+  {path: '**', redirectTo:'index'},
 ];
 
 @NgModule({

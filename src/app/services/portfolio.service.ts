@@ -11,7 +11,7 @@ export class PortfolioService {
         id           :20,
         photo        : "./assets/img/projects/portfolio2-design.jpg",
         title        : "Portfolio Design",
-        skill        : ["HTML", "CSS"],
+        skill        : ["HTML", "CSS", "JavaScript"],
         date_project : new Date(2023, 10, 10),
         observation  : "",
         link_github  : "https://github.com/roraima1986/portfolio-design.github.io",

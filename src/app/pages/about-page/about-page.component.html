@@ -66,44 +66,19 @@
 
     <div class="certificates">
       <div class="container-certificates">
-        <div class="certificates-certificate">
+        <div class="certificates-certificate" *ngFor="let item of certificates">
 
           <div class="certificate-image">
-             <img src="./../../../assets/img/certificates/udemy-01.jpg" class="image" alt="udemy">
+             <img [src]="item.logo" class="image" [alt]="item.institute">
           </div>
 
           <div class="certificate-description">
-            <h4 class="certificate-title">Angular: De cero a experto - Edición 2023</h4>
-            <span class="certificate-id">536546513545565</span>
-            <span class="certificate-date">Octubre 2023</span>
+            <h4 class="certificate-title">{{item.name}}</h4>
+            <p class="certificate-id">Id certificado: {{item.id_certificate}}</p>
+            <p class="certificate-date">Fecha: {{item.date}}</p>
           </div>
         </div>
 
-        <div class="certificates-certificate">
-
-          <div class="certificate-image">
-            <img src="./../../../assets/img/certificates/Linkedin-Learning-01.jpg" class="image" alt="udemy">
-          </div>
-
-          <div class="certificate-description">
-            <h4 class="certificate-title">Angular Esencial</h4>
-            <span class="certificate-id">536546513545565</span>
-            <span class="certificate-date">Octubre 2023</span>
-          </div>
-        </div>
-
-        <div class="certificates-certificate">
-
-          <div class="certificate-image">
-            <img src="./../../../assets/img/certificates/Linkedin-Learning-01.jpg" class="image" alt="udemy">
-          </div>
-
-          <div class="certificate-description">
-            <h4 class="certificate-title">Angular Esencial</h4>
-            <span class="certificate-id">536546513545565</span>
-            <span class="certificate-date">Octubre 2023</span>
-          </div>
-        </div>
       </div>
     </div>
 
@@ -117,9 +92,6 @@
       <li class="skill">TypeScript</li>
       <li class="skill">Angular</li>
       <li class="skill">React</li>
-      <li class="skill">Python</li>
-      <li class="skill">Django</li>
-      <li class="skill">Django REST Framework</li>
     </ul>
   </article>
 </section>
