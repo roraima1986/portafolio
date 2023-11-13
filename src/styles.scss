@@ -23,7 +23,7 @@ body {
   font-family: $text;
 }
 
-/*.circles {
+.circles {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -33,34 +33,34 @@ body {
 
   .circle {
     position: absolute;
-    width: 40%;
-    height: 40%;
+    width: 40rem;
+    height: 30rem;
     border-radius: 50%;
-    filter: blur(3em);
-    animation: circleAnimation 40s linear infinite both;
+    filter: blur(20em);
+    animation: circleAnimation 100s linear infinite both;
   }
 
   @keyframes circleAnimation {
     from{
-      transform: rotate(0deg) scale(3);
+      transform: rotate(0deg);
     }
     to {
-      transform: rotate(360deg) scale(3);
+      transform: rotate(360deg);
     }
   }
 
   .circle1 {
-    background-color: $black;
+    background-color: $blue;
     top: 0%;
     left: 0%;
   }
 
   .circle2 {
-    background-color: $dark-gray;
+    background-color: $gray;
     top: 0%;
     right: 0%;
   }
-}*/
+}
 
 h1 {
   font-family: $title;
@@ -93,7 +93,7 @@ i {
 }
 
 .main {
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
   position: relative;
   z-index: 2;
@@ -106,7 +106,6 @@ i {
   align-items: center;
   justify-content: center;
   padding: 5rem 0;
-  padding-left: 5rem;
   margin: 1rem;
 }
 
@@ -134,7 +133,7 @@ i {
       display: block;
 
       .item {
-        margin: 0.5rem;
+        margin-bottom: 0.5rem;
 
         a {
 
@@ -143,14 +142,6 @@ i {
             padding: 1rem;
             border-radius: 50%;
             transition: all 0.5s;
-          }
-
-          span {
-            margin-left: 0.5rem;
-            color: $blue;
-            opacity: 0!important;
-            transition: all 0.5s;
-            font-weight: bold;
           }
         }
       }
@@ -168,8 +159,6 @@ i {
 
         }
       }
-
-
     }
   }
 }
@@ -182,7 +171,7 @@ i {
     width: 10%;
   }
 
-  h2 {
+  .home-subtitle {
     color: $gray;
     font-family: $subtitle;
     margin-bottom: 5rem;
@@ -270,7 +259,7 @@ i {
       margin-top: 0.5rem;
       margin-bottom: 1rem;
       text-align: right;
-      flex-basis: 20%;
+      flex-basis: 40%;
 
       .resume-year {
         display: block;
@@ -282,7 +271,7 @@ i {
     .divider {
       position: absolute;
       top: 0;
-      left: 22%;
+      left: 41%;
       height: 100%;
       width: 1px;
       background-color: $white;
@@ -311,7 +300,7 @@ i {
     }
 
     .resume-profession {
-      flex-basis: 80%;
+      flex-basis: 60%;
       margin-left: 2rem;
       margin-top: 0.5rem;
       margin-bottom: 1rem;
@@ -361,10 +350,11 @@ i {
           .certificate-id {
             margin-bottom: 0.5rem;
             font-size: 0.8rem;
+            overflow: hidden!important;
+            text-overflow: ellipsis!important;
           }
 
           .certificate-date {
-
             font-size: 0.8rem;
           }
         }
@@ -419,7 +409,7 @@ i {
 
         .img {
           width: 100%;
-          height: 10rem;
+          height: 11rem;
           border:none;
           transition: all 0.5s ease;
         }
@@ -516,21 +506,21 @@ i {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 5rem;
-        height: 5rem;
+        width: 4rem;
+        height: 4rem;
         border-radius: 50%;
         border: 2px solid $blue;
-        font-size: 2.5rem;
+        font-size: 2rem;
       }
 
       h3 {
-        font-size: 1.5rem;
-        font-weight: 400;
+        font-size: 1.25rem;
+        font-weight: 600;
         margin-bottom: 0.5rem;
       }
 
       p {
-        font-size: 1.25rem;
+        font-size: 1rem;
       }
 
       a {
@@ -538,7 +528,7 @@ i {
       }
 
       .social-icon {
-        font-size: 2rem;
+        font-size: 1.5rem;
         transition: all 0.5s;
       }
 
@@ -552,6 +542,9 @@ i {
 
 /* footer */
 .footer {
+  position: relative;
+  z-index: 2;
+
   p {
     text-align: center;
     color: $gray;
@@ -560,131 +553,3 @@ i {
 }
 
 /* RESPONSIVE  */
-@media screen and (max-width: 1440px){
-  .portfolio-design {
-    .grid-container {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-}
-
-@media screen and (max-width: 991px) {
-
-  .about {
-    .article-about {
-      flex-direction: column;
-
-      .about-description {
-        text-align: center;
-      }
-    }
-  }
-
-  .contact {
-    .info {
-      flex-direction: column;
-
-      .information {
-        margin-bottom: 2rem;
-        justify-content: start;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .section {
-    padding-left: 5rem;
-  }
-
-  .portfolio-design {
-    .grid-container {
-      grid-template-columns: repeat(1, 1fr);
-    }
-  }
-}
-
-@media screen and (max-width:685px) {
-  .main {
-    width: 98%;
-  }
-
-  h1 {
-    font-size: 2.75rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  .home {
-    .link {
-      flex-direction: column;
-    }
-  }
-
-  .about .figure img {
-    width: 95%!important;
-  }
-
-
-}
-
-@media screen and (max-width:499px) {
-
-  .footer {
-    p {
-      font-size: 0.75rem;
-    }
-  }
-}
-
-@media screen and (max-width:480px) {
-  .contact {
-
-    .info {
-
-      .information {
-        .icon {
-          width: 4rem;
-          height: 4rem;
-          font-size: 2rem;
-        }
-
-        h3,
-        p,
-        .social-icon {
-          font-size: 1.2rem;
-        }
-      }
-    }
-
-
-  }
-}
-
-@media screen and (max-width:410px) {
-  .contact {
-
-    .info {
-
-      .information {
-        .icon {
-          width: 3rem;
-          height: 3rem;
-          font-size: 1.5rem;
-        }
-
-        h3,
-        p,
-        .social-icon {
-          font-size: 1rem;
-        }
-      }
-    }
-
-
-  }
-}
-
-
