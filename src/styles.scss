@@ -37,7 +37,7 @@ body {
     height: 30rem;
     border-radius: 50%;
     filter: blur(20em);
-    animation: circleAnimation 100s linear infinite both;
+    animation: circleAnimation 150s linear infinite both;
   }
 
   @keyframes circleAnimation {
@@ -64,7 +64,7 @@ body {
 
 h1 {
   font-family: $title;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 4rem;
 }
 
@@ -106,7 +106,6 @@ i {
   align-items: center;
   justify-content: center;
   padding: 5rem 0;
-  margin: 1rem;
 }
 
 /* Navbar */
@@ -167,10 +166,6 @@ i {
 /* Inicio */
 .home {
 
-  .logo {
-    width: 10%;
-  }
-
   .home-subtitle {
     color: $gray;
     font-family: $subtitle;
@@ -179,6 +174,7 @@ i {
 
   .link {
     display: flex;
+    flex-direction: row;
 
     a {
       color: $white;
@@ -187,6 +183,7 @@ i {
       justify-content: center;
       margin: 1rem;
       padding: 1rem;
+      font-size: 1rem;
       border-radius: 2rem;
       border: 2px solid $blue;
       transition: all 0.5s;
@@ -320,43 +317,38 @@ i {
     .container-certificates {
       display: flex;
       flex-direction: column;
-      flex-wrap: wrap;
-      gap: 2rem;
+
+      justify-content: center;
+      gap: 1rem;
 
       .certificates-certificate {
         display: flex;
         flex-direction: row;
         align-items: center;
+        gap: 1rem;
 
 
         .certificate-image {
-          flex-basis: 15%;
+          flex-basis: 10%;
+          border-radius: 50%;
+          overflow: hidden;
+
 
           .image {
             width: 100%;
-            border-radius: 1rem;
+            border-radius: 50%;
           }
         }
 
         .certificate-description {
-          flex-basis: 85%;
+          flex-basis: 90%;
           align-items: center;
-          margin-left: 1rem;
-
-          .certificate-title {
-            margin-bottom: 0.5rem;
-          }
 
           .certificate-id {
-            margin-bottom: 0.5rem;
-            font-size: 0.8rem;
             overflow: hidden!important;
             text-overflow: ellipsis!important;
           }
 
-          .certificate-date {
-            font-size: 0.8rem;
-          }
         }
       }
     }
@@ -484,16 +476,16 @@ i {
   }
 }
 
-
 /* Contacto */
 
 .contact {
 
   .info {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     width: 100%;
-    margin-bottom: 2rem;
+    gap: 2rem;
 
     .information {
       display: flex;
@@ -553,3 +545,107 @@ i {
 }
 
 /* RESPONSIVE  */
+@media (max-width:1200px) {
+  .main {
+    width: 80%;
+  }
+
+  .nav {
+    background-color: $black;
+    padding: 0.5rem!important;
+  }
+}
+
+@media (max-width:995px) {
+  .section.about,
+  .section.portfolio-design,
+  .section.contact {
+    padding-left: 3.5rem;
+  }
+
+  .portfolio-design .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width:870px) {
+  .about .article-about .about-image {
+    flex-basis: 50%;
+  }
+
+  .about .article-about .about-description {
+    flex-basis: 50%;
+  }
+
+  .certificate-id {
+    display: none;
+  }
+}
+
+@media (max-width:730px) {
+  .about .article-about {
+    flex-direction: column;
+  }
+}
+
+@media (max-width:650px) {
+  .portfolio-design .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contact .info {
+    flex-direction: column;
+
+    .information {
+      justify-content: flex-start;
+    }
+  }
+}
+
+@media (max-width:600px) {
+  .home-title {
+    font-size: 3rem;
+  }
+
+  .home-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .home .link {
+    flex-direction: column;
+  }
+}
+
+@media (max-width:499px) {
+  p, li, a {
+    font-size: 0.9rem;
+  }
+
+  .main {
+    width: 90%;
+  }
+
+  .section.about,
+  .section.portfolio-design,
+  .section.contact {
+    padding-left: 4rem;
+  }
+
+  .home-title {
+    font-size: 2rem;
+  }
+
+  .home-subtitle {
+    font-size: 1rem;
+  }
+
+  .home .link a {
+    font-size: 0.8rem;
+  }
+
+
+  .footer p {
+    font-size: 0.7rem;
+  }
+}
