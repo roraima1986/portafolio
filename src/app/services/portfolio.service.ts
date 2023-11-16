@@ -8,6 +8,17 @@ export class PortfolioService {
   getPortfolio() {
     return [
       {
+        id           :21,
+        photo        : "./assets/img/projects/social-proof-design.jpg",
+        title        : "Social proof section",
+        skill        : ["HTML", "CSS"],
+        date_project : new Date(2023, 10, 16),
+        observation  : "",
+        link_github  : "https://github.com/roraima1986/social-proof.github.io",
+        link_website : "https://roraima1986.github.io/social-proof.github.io/",
+        is_active    : true,
+      },
+      {
         id           :20,
         photo        : "./assets/img/projects/portfolio2-design.jpg",
         title        : "Portfolio Design",
