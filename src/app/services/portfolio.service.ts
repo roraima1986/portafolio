@@ -8,14 +8,25 @@ export class PortfolioService {
   getPortfolio() {
     return [
       {
+        id           :23,
+        photo        : "./assets/img/projects/four-card-feature-section.jpg",
+        title        : "Social proof section",
+        skill        : ["React"],
+        date_project : new Date(2023, 10, 21),
+        observation  : "Desafio de Frontend Mentor",
+        link_github  : "https://github.com/roraima1986/four-card-feature-section.github.io",
+        link_website : "https://roraima1986.github.io/four-card-feature-section.github.io/",
+        is_active    : true,
+      },
+      {
         id           :22,
         photo        : "./assets/img/projects/article-preview-design.jpg",
         title        : "Social proof section",
         skill        : ["Angular"],
         date_project : new Date(2023, 10, 17),
         observation  : "Desafio de Frontend Mentor",
-        link_github  : "https://github.com/roraima1986/article-preview.github.io",
-        link_website : "https://roraima1986.github.io/article-preview.github.io/",
+        link_github  : "https://github.com/roraima1986/social-proof.github.io",
+        link_website : "https://roraima1986.github.io/social-proof.github.io/",
         is_active    : true,
       },
       {
@@ -25,8 +36,8 @@ export class PortfolioService {
         skill        : ["HTML", "CSS"],
         date_project : new Date(2023, 10, 16),
         observation  : "Desafio de Frontend Mentor",
-        link_github  : "https://github.com/roraima1986/social-proof.github.io",
-        link_website : "https://roraima1986.github.io/social-proof.github.io/",
+        link_github  : "https://github.com/roraima1986/article-preview.github.io",
+        link_website : "https://roraima1986.github.io/article-preview.github.io/",
         is_active    : true,
       },
       {
@@ -60,7 +71,7 @@ export class PortfolioService {
         observation  : "Desafio de Frontend Mentor",
         link_github  : "https://github.com/roraima1986/profile-card.github.io",
         link_website : "https://roraima1986.github.io/profile-card.github.io/",
-        is_active    : true,
+        is_active    : false,
       },
       {
         id           :17,
@@ -82,7 +93,7 @@ export class PortfolioService {
         observation  : "Desafio de Frontend Mentor",
         link_github  : "https://github.com/roraima1986/stats-preview-card.github.io",
         link_website : "https://roraima1986.github.io/stats-preview-card.github.io/",
-        is_active    : true,
+        is_active    : false,
       },
       {
         id           :15,
@@ -236,7 +247,7 @@ export class PortfolioService {
         observation  : "",
         link_github  : "https://github.com/roraima1986/jjingenieria.github.io",
         link_website : "https://jjingenieria.cl/",
-        is_active    : true,
+        is_active    : false,
       },
       {
         id           :1,
