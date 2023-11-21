@@ -9,9 +9,9 @@ export class PortfolioService {
     return [
       {
         id           :23,
-        photo        : "./assets/img/projects/four-card-feature-section.jpg",
-        title        : "Social proof section",
-        skill        : ["React"],
+        photo        : "./assets/img/projects/four-card-feature-section-design.jpg",
+        title        : "Four Card Feature Section",
+        skill        : ["React", "HTML", "CSS"],
         date_project : new Date(2023, 10, 21),
         observation  : "Desafio de Frontend Mentor",
         link_github  : "https://github.com/roraima1986/four-card-feature-section.github.io",
@@ -21,8 +21,8 @@ export class PortfolioService {
       {
         id           :22,
         photo        : "./assets/img/projects/article-preview-design.jpg",
-        title        : "Social proof section",
-        skill        : ["Angular"],
+        title        : "Article Preview Design",
+        skill        : ["Angular", "HTML", "CSS"],
         date_project : new Date(2023, 10, 17),
         observation  : "Desafio de Frontend Mentor",
         link_github  : "https://github.com/roraima1986/social-proof.github.io",
@@ -60,7 +60,7 @@ export class PortfolioService {
         observation  : "Desafio de Frontend Mentor",
         link_github  : "https://github.com/roraima1986/faq-accordion.github.io",
         link_website : "https://roraima1986.github.io/faq-accordion.github.io/",
-        is_active    : true,
+        is_active    : false,
       },
       {
         id           :18,
@@ -148,7 +148,7 @@ export class PortfolioService {
         observation  : "Desafio de Frontend Mentor",
         link_github  : "https://github.com/roraima1986/resultssummary.github.io",
         link_website : "https://roraima1986.github.io/resultssummary.github.io/",
-        is_active    : true,
+        is_active    : false,
       },
       {
         id           :10,
@@ -159,7 +159,7 @@ export class PortfolioService {
         observation  : "Desafio de Frontend Mentor",
         link_github  : "https://github.com/roraima1986/qrcode.github.io",
         link_website : "https://roraima1986.github.io/qrcode.github.io/",
-        is_active    : true,
+        is_active    : false,
       },
       {
         id           :9,
@@ -225,7 +225,7 @@ export class PortfolioService {
         observation  : "Master CSS",
         link_github  : "https://github.com/roraima1986/cssflexbox.github.io",
         link_website : "https://roraima1986.github.io/cssflexbox.github.io/",
-        is_active    : true,
+        is_active    : false,
       },
       {
         id           :3,
