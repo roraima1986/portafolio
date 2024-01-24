@@ -12,7 +12,7 @@ export class PortfolioService {
         photo        : "./assets/img/projects/develop-design.jpg",
         title        : "Web Development",
         skill        : ["HTML", "CSS", "Método BEM"],
-        date_project : new Date(2023, 10, 21),
+        date_project : new Date(2024, 0, 21),
         observation  : "Master CSS Avanzado",
         link_github  : "https://github.com/roraima1986/web-development.github.io",
         link_website : "https://roraima1986.github.io/web-development.github.io/",
