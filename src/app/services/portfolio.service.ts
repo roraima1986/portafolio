@@ -8,6 +8,17 @@ export class PortfolioService {
   getPortfolio() {
     return [
       {
+        id           :25,
+        photo        : "./assets/img/projects/movies-design.jpg",
+        title        : "Movies React",
+        skill        : ["React", "Vite"],
+        date_project : new Date(2024, 0, 24),
+        observation  : "Master en React",
+        link_github  : "https://github.com/roraima1986/movies-react.github.io",
+        link_website : "https://roraima1986.github.io/movies-react.github.io/",
+        is_active    : true,
+      },
+      {
         id           :24,
         photo        : "./assets/img/projects/develop-design.jpg",
         title        : "Web Development",
