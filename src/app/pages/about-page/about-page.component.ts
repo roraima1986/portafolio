@@ -10,6 +10,13 @@ export class AboutPageComponent  {
 
   public certificates: Certificate[] = [
     {
+      name:           'Master en CSS3 Avanzado: Maqueta 3 sitios web profesionales',
+      institute:      'Udemy',
+      id_certificate: 'UC-13cf28fb-26d6-4d84-b39b-3dc94914ee80/',
+      date:           '01/02/2024',
+      logo:           './assets/img/certificates/udemy.com.png',
+    },
+    {
       name:           'Angular: De cero a experto - Edición 2023',
       institute:      'Udemy',
       id_certificate: 'UC-bbf17962-c001-4952-877f-4d958247535e',

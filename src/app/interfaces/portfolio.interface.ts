@@ -3,7 +3,7 @@ export interface Portfolio {
   photo?:        string;
   title:         string;
   skill:         string[];
-  date_project:  Date;
+  date_project:  string;
   observation?:  string;
   link_github?:  string;
   link_website?: string;
