@@ -9,6 +9,17 @@ export class PortfolioService {
     return [
       {
         id           :26,
+        photo        : "./assets/img/projects/base-apparel-design.jpg",
+        title        : "Base Apparel",
+        skill        : ["HTML5", "CSS3", "JavaScript"],
+        date_project : "04/02/2024",
+        observation  : "Desafio de Frontend Mentor",
+        link_github  : "https://github.com/roraima1986/base-apparel.github.io",
+        link_website : "https://roraima1986.github.io/base-apparel.github.io/",
+        is_active    : true,
+      },
+      {
+        id           :26,
         photo        : "./assets/img/projects/web-design-layout.jpg",
         title        : "Video Games Website",
         skill        : ["HTML5", "CSS3", "JavaScript", "Método BEM"],
