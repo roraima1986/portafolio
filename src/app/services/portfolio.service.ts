@@ -8,6 +8,17 @@ export class PortfolioService {
   getPortfolio() {
     return [
       {
+        id           :31,
+        photo        : "./assets/img/projects/huddle-landing-page-design.jpg",
+        title        : "Huddle landing page",
+        skill        : ["HTML5", "CSS3"],
+        date_project : "06/02/2024",
+        observation  : "Desafio de Frontend Mentor",
+        link_github  : "https://github.com/roraima1986/huddle-landing-page.github.io",
+        link_website : "https://roraima1986.github.io/huddle-landing-page.github.io/",
+        is_active    : true,
+      },
+      {
         id           :30,
         photo        : "./assets/img/projects/ping-coming-soon-page-design.jpg",
         title        : "Ping coming soon page",
