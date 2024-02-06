@@ -8,6 +8,17 @@ export class PortfolioService {
   getPortfolio() {
     return [
       {
+        id           :30,
+        photo        : "./assets/img/projects/ping-coming-soon-page-design.jpg",
+        title        : "Ping coming soon page",
+        skill        : ["HTML5", "CSS3", "JavaScript"],
+        date_project : "06/02/2024",
+        observation  : "Desafio de Frontend Mentor",
+        link_github  : "https://github.com/roraima1986/ping-coming-soon.github.io",
+        link_website : "https://roraima1986.github.io/ping-coming-soon.github.io/",
+        is_active    : true,
+      },
+      {
         id           :29,
         photo        : "./assets/img/projects/single-price-design.jpg",
         title        : "Single price grid component",
