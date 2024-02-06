@@ -8,7 +8,29 @@ export class PortfolioService {
   getPortfolio() {
     return [
       {
-        id           :26,
+        id           :29,
+        photo        : "./assets/img/projects/single-price-design.jpg",
+        title        : "Single price grid component",
+        skill        : ["HTML5", "CSS3"],
+        date_project : "05/02/2024",
+        observation  : "Desafio de Frontend Mentor",
+        link_github  : "https://github.com/roraima1986/single-price.github.io-",
+        link_website : "https://roraima1986.github.io/single-price.github.io-/",
+        is_active    : true,
+      },
+      {
+        id           :28,
+        photo        : "./assets/img/projects/registration-form-design.jpg",
+        title        : "Intro component with sign up form solution",
+        skill        : ["HTML5", "CSS3", "JavaScript"],
+        date_project : "05/02/2024",
+        observation  : "Desafio de Frontend Mentor",
+        link_github  : "https://github.com/roraima1986/registration-form.github.io",
+        link_website : "https://roraima1986.github.io/registration-form.github.io/",
+        is_active    : true,
+      },
+      {
+        id           :27,
         photo        : "./assets/img/projects/base-apparel-design.jpg",
         title        : "Base Apparel",
         skill        : ["HTML5", "CSS3", "JavaScript"],
