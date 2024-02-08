@@ -8,6 +8,17 @@ export class PortfolioService {
   getPortfolio() {
     return [
       {
+        id           :32,
+        photo        : "./assets/img/projects/newsletter-design.jpg",
+        title        : "Newsletter sign-up form with success message",
+        skill        : ["HTML5", "CSS3", "JavaScript"],
+        date_project : "07/02/2024",
+        observation  : "Desafio de Frontend Mentor",
+        link_github  : "https://github.com/roraima1986/newsletter.github.io",
+        link_website : "https://roraima1986.github.io/newsletter.github.io/",
+        is_active    : true,
+      },
+      {
         id           :31,
         photo        : "./assets/img/projects/huddle-landing-page-design.jpg",
         title        : "Huddle landing page",
