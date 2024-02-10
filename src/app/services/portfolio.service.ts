@@ -71,7 +71,7 @@ export class PortfolioService {
         observation  : "Desafio de Frontend Mentor",
         link_github  : "https://github.com/roraima1986/base-apparel.github.io",
         link_website : "https://roraima1986.github.io/base-apparel.github.io/",
-        is_active    : true,
+        is_active    :  false,
       },
       {
         id           :26,
