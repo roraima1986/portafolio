@@ -8,6 +8,17 @@ export class PortfolioService {
   getPortfolio() {
     return [
       {
+        id           :33,
+        photo        : "./assets/img/projects/age-calculator-design.jpg",
+        title        : "Age Calculator",
+        skill        : ["HTML5", "CSS3", "JavaScript"],
+        date_project : "11/02/2024",
+        observation  : "Desafio de Frontend Mentor",
+        link_github  : "https://github.com/roraima1986/age-calculator.github.io",
+        link_website : "https://roraima1986.github.io/age-calculator.github.io/",
+        is_active    : true,
+      },
+      {
         id           :32,
         photo        : "./assets/img/projects/newsletter-design.jpg",
         title        : "Newsletter sign-up form with success message",
