@@ -8,7 +8,18 @@ export class PortfolioService {
   getPortfolio() {
     return [
       {
-        id           :33,
+        id           : 34,
+        photo        : "./assets/img/projects/interactive-rating-component-design.jpg",
+        title        : "Interactive Rating",
+        skill        : ["Angular"],
+        date_project : "10/10/2023",
+        observation  : "Desafio de Frontend Mentor",
+        link_github  : "https://github.com/roraima1986/interactive-rating-angular.github.io",
+        link_website : "https://roraima1986.github.io/interactive-rating-angular.github.io/",
+        is_active    : true,
+      },
+      {
+        id           : 33,
         photo        : "./assets/img/projects/age-calculator-design.jpg",
         title        : "Age Calculator",
         skill        : ["HTML5", "CSS3", "JavaScript"],
@@ -236,7 +247,7 @@ export class PortfolioService {
         observation  : "Desafio de Frontend Mentor",
         link_github  : "https://github.com/roraima1986/interactive-rating.github.io",
         link_website : "https://roraima1986.github.io/interactive-rating.github.io/",
-        is_active    : true,
+        is_active    : false,
       },
       {
         id           :12,
