@@ -8,10 +8,21 @@ export class PortfolioService {
   getPortfolio() {
     return [
       {
+        id           :25,
+        photo        : "./assets/img/projects/base-apparel-design.jpg",
+        title        : "Base Apparel",
+        skill        : ["Angular v.17"],
+        date_project : "15/02/2024",
+        observation  : "Desafio de Frontend Mentor",
+        link_github  : "https://github.com/roraima1986/base-apparel-angular.github.io",
+        link_website : "https://roraima1986.github.io/base-apparel-angular.github.io/",
+        is_active    :  true,
+      },
+      {
         id           : 34,
         photo        : "./assets/img/projects/interactive-rating-component-design.jpg",
         title        : "Interactive Rating",
-        skill        : ["Angular"],
+        skill        : ["Angular v.17"],
         date_project : "10/10/2023",
         observation  : "Desafio de Frontend Mentor",
         link_github  : "https://github.com/roraima1986/interactive-rating-angular.github.io",
@@ -247,7 +258,7 @@ export class PortfolioService {
         observation  : "Desafio de Frontend Mentor",
         link_github  : "https://github.com/roraima1986/interactive-rating.github.io",
         link_website : "https://roraima1986.github.io/interactive-rating.github.io/",
-        is_active    : false,
+        is_active    : true,
       },
       {
         id           :12,
@@ -286,7 +297,7 @@ export class PortfolioService {
         id           :9,
         photo        : "./assets/img/projects/portafolio-design.jpg",
         title        : "Mi Portafolio",
-        skill        : ["Angular"],
+        skill        : ["Angular v.16"],
         date_project : "05/10/2023",
         observation  : "",
         link_github  : "https://github.com/roraima1986/portafolio",
