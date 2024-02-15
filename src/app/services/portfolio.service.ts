@@ -8,7 +8,18 @@ export class PortfolioService {
   getPortfolio() {
     return [
       {
-        id           :25,
+        id           :36,
+        photo        : "./assets/img/projects/registration-form-design.jpg",
+        title        : "Intro component with sign up form solution",
+        skill        : ["Angular v.17"],
+        date_project : "15/02/2024",
+        observation  : "Desafio de Frontend Mentor",
+        link_github  : "https://github.com/roraima1986/intro-component-angular.github.io",
+        link_website : "https://roraima1986.github.io/intro-component-angular.github.io/",
+        is_active    : true,
+      },
+      {
+        id           :35,
         photo        : "./assets/img/projects/base-apparel-design.jpg",
         title        : "Base Apparel",
         skill        : ["Angular v.17"],
