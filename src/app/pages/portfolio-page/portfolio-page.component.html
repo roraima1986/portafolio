@@ -3,14 +3,25 @@
     <h2 class="section-title-h2">Portafolio</h2>
   </header>
 
+  <!--Botones para filtrar los proyectos-->
+  <nav class="nav-portfolio">
+    <button (click)="filteredProjects('all')" class="nav-item" [class.nav-active]="currentFilter === 'all'" >Todos</button>
+    <button (click)="filteredProjects('destacado')" class="nav-item" [class.nav-active]="currentFilter === 'destacado'">Destacado</button>
+    <button (click)="filteredProjects('JavaScript')" class="nav-item" [class.nav-active]="currentFilter === 'JavaScript'">JavaScript</button>
+    <button (click)="filteredProjects('Angular')" class="nav-item" [class.nav-active]="currentFilter === 'Angular'">Angular</button>
+    <button (click)="filteredProjects('React')" class="nav-item" [class.nav-active]="currentFilter === 'React'">React</button>
+  </nav>
 
+  <!--Contenedor de los proyectos-->
   <div class="grid-container">
-    <ng-container *ngFor="let obj of portfolio">
+
+    <ng-container *ngFor="let obj of filteredPortfolio">
 
       <ng-container *ngIf="obj.is_active">
         <article class="article">
 
           <div class="img-project">
+            <i *ngIf="obj.is_destacad" class="fa-solid fa-star"></i>
             <img class="img" [src]="obj.photo" [alt]="obj.title">
           </div>
 

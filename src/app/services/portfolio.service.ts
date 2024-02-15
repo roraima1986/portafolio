@@ -11,34 +11,37 @@ export class PortfolioService {
         id           :36,
         photo        : "./assets/img/projects/registration-form-design.jpg",
         title        : "Intro component with sign up form solution",
-        skill        : ["Angular v.17"],
+        skill        : ["Angular"],
         date_project : "15/02/2024",
         observation  : "Desafio de Frontend Mentor",
         link_github  : "https://github.com/roraima1986/intro-component-angular.github.io",
         link_website : "https://roraima1986.github.io/intro-component-angular.github.io/",
         is_active    : true,
+        is_destacad  : false,
       },
       {
         id           :35,
         photo        : "./assets/img/projects/base-apparel-design.jpg",
         title        : "Base Apparel",
-        skill        : ["Angular v.17"],
+        skill        : ["Angular"],
         date_project : "15/02/2024",
         observation  : "Desafio de Frontend Mentor",
         link_github  : "https://github.com/roraima1986/base-apparel-angular.github.io",
         link_website : "https://roraima1986.github.io/base-apparel-angular.github.io/",
-        is_active    :  true,
+        is_active    : true,
+        is_destacad  : false,
       },
       {
         id           : 34,
         photo        : "./assets/img/projects/interactive-rating-component-design.jpg",
         title        : "Interactive Rating",
-        skill        : ["Angular v.17"],
+        skill        : ["Angular"],
         date_project : "10/10/2023",
         observation  : "Desafio de Frontend Mentor",
         link_github  : "https://github.com/roraima1986/interactive-rating-angular.github.io",
         link_website : "https://roraima1986.github.io/interactive-rating-angular.github.io/",
         is_active    : true,
+        is_destacad  : false,
       },
       {
         id           : 33,
@@ -50,6 +53,7 @@ export class PortfolioService {
         link_github  : "https://github.com/roraima1986/age-calculator.github.io",
         link_website : "https://roraima1986.github.io/age-calculator.github.io/",
         is_active    : true,
+        is_destacad  : false,
       },
       {
         id           :32,
@@ -61,6 +65,7 @@ export class PortfolioService {
         link_github  : "https://github.com/roraima1986/newsletter.github.io",
         link_website : "https://roraima1986.github.io/newsletter.github.io/",
         is_active    : true,
+        is_destacad  : false,
       },
       {
         id           :31,
@@ -72,6 +77,7 @@ export class PortfolioService {
         link_github  : "https://github.com/roraima1986/huddle-landing-page.github.io",
         link_website : "https://roraima1986.github.io/huddle-landing-page.github.io/",
         is_active    : true,
+        is_destacad  : false,
       },
       {
         id           :30,
@@ -83,6 +89,7 @@ export class PortfolioService {
         link_github  : "https://github.com/roraima1986/ping-coming-soon.github.io",
         link_website : "https://roraima1986.github.io/ping-coming-soon.github.io/",
         is_active    : true,
+        is_destacad  : false,
       },
       {
         id           :29,
@@ -94,6 +101,7 @@ export class PortfolioService {
         link_github  : "https://github.com/roraima1986/single-price.github.io-",
         link_website : "https://roraima1986.github.io/single-price.github.io-/",
         is_active    : true,
+        is_destacad  : false,
       },
       {
         id           :28,
@@ -105,6 +113,7 @@ export class PortfolioService {
         link_github  : "https://github.com/roraima1986/registration-form.github.io",
         link_website : "https://roraima1986.github.io/registration-form.github.io/",
         is_active    : true,
+        is_destacad  : false,
       },
       {
         id           :27,
@@ -116,6 +125,7 @@ export class PortfolioService {
         link_github  : "https://github.com/roraima1986/base-apparel.github.io",
         link_website : "https://roraima1986.github.io/base-apparel.github.io/",
         is_active    :  false,
+        is_destacad  : false,
       },
       {
         id           :26,
@@ -127,6 +137,7 @@ export class PortfolioService {
         link_github  : "https://github.com/roraima1986/video-games-new.github.io",
         link_website : "https://roraima1986.github.io/video-games-new.github.io/",
         is_active    : true,
+        is_destacad  : true,
       },
       {
         id           :25,
@@ -138,6 +149,7 @@ export class PortfolioService {
         link_github  : "https://github.com/roraima1986/movies-react.github.io",
         link_website : "https://roraima1986.github.io/movies-react.github.io/",
         is_active    : true,
+        is_destacad  : false,
       },
       {
         id           :24,
@@ -149,6 +161,7 @@ export class PortfolioService {
         link_github  : "https://github.com/roraima1986/web-development.github.io",
         link_website : "https://roraima1986.github.io/web-development.github.io/",
         is_active    : true,
+        is_destacad  : true,
       },
       {
         id           :23,
@@ -160,6 +173,7 @@ export class PortfolioService {
         link_github  : "https://github.com/roraima1986/four-card-feature-section.github.io",
         link_website : "https://roraima1986.github.io/four-card-feature-section.github.io/",
         is_active    : true,
+        is_destacad  : false,
       },
       {
         id           :22,
@@ -171,6 +185,7 @@ export class PortfolioService {
         link_github  : "https://github.com/roraima1986/article-preview.github.io",
         link_website : "https://roraima1986.github.io/article-preview.github.io/",
         is_active    : true,
+        is_destacad  : false,
       },
       {
         id           :21,
@@ -182,6 +197,7 @@ export class PortfolioService {
         link_github  : "https://github.com/roraima1986/social-proof.github.io",
         link_website : "https://roraima1986.github.io/social-proof.github.io/",
         is_active    : true,
+        is_destacad  : false,
       },
       {
         id           :20,
@@ -193,6 +209,7 @@ export class PortfolioService {
         link_github  : "https://github.com/roraima1986/portfolio-design.github.io",
         link_website : "https://roraima1986.github.io/portfolio-design.github.io/",
         is_active    : true,
+        is_destacad  : false,
       },
       {
         id           :19,
@@ -204,6 +221,7 @@ export class PortfolioService {
         link_github  : "https://github.com/roraima1986/faq-accordion.github.io",
         link_website : "https://roraima1986.github.io/faq-accordion.github.io/",
         is_active    : false,
+        is_destacad  : false,
       },
       {
         id           :18,
@@ -215,6 +233,7 @@ export class PortfolioService {
         link_github  : "https://github.com/roraima1986/profile-card.github.io",
         link_website : "https://roraima1986.github.io/profile-card.github.io/",
         is_active    : false,
+        is_destacad  : false,
       },
       {
         id           :17,
@@ -226,6 +245,7 @@ export class PortfolioService {
         link_github  : "https://github.com/roraima1986/column-preview-card.github.io",
         link_website : "https://roraima1986.github.io/column-preview-card.github.io/",
         is_active    : true,
+        is_destacad  : false,
       },
       {
         id           :16,
@@ -237,6 +257,7 @@ export class PortfolioService {
         link_github  : "https://github.com/roraima1986/stats-preview-card.github.io",
         link_website : "https://roraima1986.github.io/stats-preview-card.github.io/",
         is_active    : false,
+        is_destacad  : false,
       },
       {
         id           :15,
@@ -248,6 +269,7 @@ export class PortfolioService {
         link_github  : "https://github.com/roraima1986/order-summary-card.github.io",
         link_website : "https://roraima1986.github.io/order-summary-card.github.io/",
         is_active    : true,
+        is_destacad  : false,
       },
       {
         id           :14,
@@ -259,6 +281,7 @@ export class PortfolioService {
         link_github  : "https://github.com/roraima1986/nft-preview-card.github.io",
         link_website : "https://roraima1986.github.io/nft-preview-card.github.io/",
         is_active    : true,
+        is_destacad  : false,
       },
       {
         id           :13,
@@ -270,6 +293,7 @@ export class PortfolioService {
         link_github  : "https://github.com/roraima1986/interactive-rating.github.io",
         link_website : "https://roraima1986.github.io/interactive-rating.github.io/",
         is_active    : true,
+        is_destacad  : false,
       },
       {
         id           :12,
@@ -281,6 +305,7 @@ export class PortfolioService {
         link_github  : "https://github.com/roraima1986/productcard.github.io",
         link_website : "https://roraima1986.github.io/productcard.github.io/",
         is_active    : true,
+        is_destacad  : false,
       },
       {
         id           :11,
@@ -292,6 +317,7 @@ export class PortfolioService {
         link_github  : "https://github.com/roraima1986/resultssummary.github.io",
         link_website : "https://roraima1986.github.io/resultssummary.github.io/",
         is_active    : false,
+        is_destacad  : false,
       },
       {
         id           :10,
@@ -303,6 +329,7 @@ export class PortfolioService {
         link_github  : "https://github.com/roraima1986/qrcode.github.io",
         link_website : "https://roraima1986.github.io/qrcode.github.io/",
         is_active    : false,
+        is_destacad  : false,
       },
       {
         id           :9,
@@ -314,6 +341,7 @@ export class PortfolioService {
         link_github  : "https://github.com/roraima1986/portafolio",
         link_website : "",
         is_active    : true,
+        is_destacad  : true,
       },
       {
         id           :8,
@@ -325,6 +353,7 @@ export class PortfolioService {
         link_github  : "https://github.com/roraima1986/country-app",
         link_website : "https://roraima1986.github.io/country-app/",
         is_active    : true,
+        is_destacad  : true,
       },
       {
         id           :7,
@@ -336,6 +365,7 @@ export class PortfolioService {
         link_github  : "https://github.com/roraima1986/software_peluqueria.github.io",
         link_website : "",
         is_active    : true,
+        is_destacad  : true,
       },
       {
         id           :6,
@@ -347,6 +377,7 @@ export class PortfolioService {
         link_github  : "https://github.com/roraima1986/clientesOpticacloud",
         link_website : "",
         is_active    : true,
+        is_destacad  : true,
       },
       {
         id           :5,
@@ -358,6 +389,7 @@ export class PortfolioService {
         link_github  : "https://github.com/roraima1986/optiaustral.github.io",
         link_website : "http://optiaustral.cl/",
         is_active    : true,
+        is_destacad  : true,
       },
       {
         id           :4,
@@ -369,6 +401,7 @@ export class PortfolioService {
         link_github  : "https://github.com/roraima1986/cssflexbox.github.io",
         link_website : "https://roraima1986.github.io/cssflexbox.github.io/",
         is_active    : false,
+        is_destacad  : false,
       },
       {
         id           :3,
@@ -380,6 +413,7 @@ export class PortfolioService {
         link_github  : "https://github.com/roraima1986/cssanimations.github.io",
         link_website : "https://roraima1986.github.io/cssanimations.github.io/",
         is_active    : true,
+        is_destacad  : true,
       },
       {
         id           :2,
@@ -391,6 +425,7 @@ export class PortfolioService {
         link_github  : "https://github.com/roraima1986/jjingenieria.github.io",
         link_website : "https://jjingenieria.cl/",
         is_active    : false,
+        is_destacad  : false,
       },
       {
         id           :1,
@@ -402,6 +437,7 @@ export class PortfolioService {
         link_github  : "https://github.com/roraima1986/opticacloud.github.io",
         link_website : "https://roraima1986.github.io/opticacloud.github.io/",
         is_active    : true,
+        is_destacad  : true,
       },
     ]
   }

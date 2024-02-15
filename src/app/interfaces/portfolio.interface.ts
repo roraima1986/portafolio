@@ -8,6 +8,7 @@ export interface Portfolio {
   link_github?:  string;
   link_website?: string;
   is_active:     boolean;
+  is_destacad?:   boolean;
 }
 
 
