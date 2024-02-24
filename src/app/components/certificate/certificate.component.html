@@ -1,0 +1,13 @@
+<h3 class="section__subtitle">Certificados</h3>
+
+<div class="certificates">
+  <div class="container__certificates">
+
+    <article class="certificate" *ngFor="let item of certificates">
+      <a [href]="item.url_credencial" target="_blank" class="certificate__link">
+        <img [src]="item.image" class="certificate-image" [alt]="item.name">
+      </a>
+    </article>
+
+  </div>
+</div>

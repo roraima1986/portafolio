@@ -1,19 +1,31 @@
-<div class="circles">
-  <div class="circle circle1"></div>
-  <div class="circle circle2"></div>
-  <div class="circle circle3"></div>
-  <div class="circle circle4"></div>
+
+<div class="container">
+
+
+  <div class="container__sphere" (window:resize)="onResize($event)">
+    <div class="sphere" *ngFor="let sphere of spheres"
+              [style.left.px] = "sphere.x"
+              [style.top.px] = "sphere.y"
+  ></div>
+  </div>
+
+
+  <!--Barra de Navegación-->
+  <navbar />
+
+  <!--Contenido-->
+  <main class="main">
+    <router-outlet />
+  </main>
+
+
+  <!--Pie de Página-->
+  <app-footer />
 </div>
 
-<navbar />
-
-<main class="main">
-  <router-outlet />
-</main>
 
 
-<footer class="footer">
-  <p>Realizado por: Roraima Lugo | Desarrollador Frontend 😊</p>
-</footer>
+
+
 
 

@@ -1,0 +1,39 @@
+.article__about {
+  width: 70rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  gap: 3rem;
+
+  .about__description {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .about__image {
+    width: 50rem;
+
+    .image {
+      width: 100%;
+      border-radius: 2rem;
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+  .article__about {
+    width: 90%;
+
+
+    .about__image {
+      width: 100%;
+    }
+  }
+
+}

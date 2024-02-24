@@ -1,61 +1,91 @@
-<section class="section portfolio-design" id="portfolio">
-  <header class="section-title">
-    <h2 class="section-title-h2">Portafolio</h2>
+<section class="section portfolio" id="portfolio">
+
+  <header class="section__title">
+    <h2 class="section__title-h2">Portafolio</h2>
   </header>
 
   <!--Botones para filtrar los proyectos-->
   <nav class="nav-portfolio">
-    <button (click)="filteredProjects('all')" class="nav-item" [class.nav-active]="currentFilter === 'all'" >Todos</button>
-    <button (click)="filteredProjects('destacado')" class="nav-item" [class.nav-active]="currentFilter === 'destacado'">Destacado</button>
-    <button (click)="filteredProjects('JavaScript')" class="nav-item" [class.nav-active]="currentFilter === 'JavaScript'">JavaScript</button>
-    <button (click)="filteredProjects('Angular')" class="nav-item" [class.nav-active]="currentFilter === 'Angular'">Angular</button>
-    <button (click)="filteredProjects('React')" class="nav-item" [class.nav-active]="currentFilter === 'React'">React</button>
+    <button (click)="filteredProjects('all')" class="nav-item" [class.nav-active]="currentFilter === 'all'" >
+      Todos
+    </button>
+
+    <button (click)="filteredProjects('destacado')" class="nav-item" [class.nav-active]="currentFilter === 'destacado'">
+      <i class="fa-solid fa-star"></i>
+      Destacado
+    </button>
+
+    <button (click)="filteredProjects('JavaScript')" class="nav-item" [class.nav-active]="currentFilter === 'JavaScript'">
+      <i class="fa-brands fa-js"></i>
+      JavaScript
+    </button>
+
+    <button (click)="filteredProjects('Angular')" class="nav-item" [class.nav-active]="currentFilter === 'Angular'">
+      <i class="fa-brands fa-angular"></i>
+      Angular
+    </button>
+
+    <button (click)="filteredProjects('React')" class="nav-item" [class.nav-active]="currentFilter === 'React'">
+      <i class="fa-brands fa-react"></i>
+      React
+    </button>
   </nav>
 
   <!--Contenedor de los proyectos-->
-  <div class="grid-container">
+  <div class="grid__container">
 
     <ng-container *ngFor="let obj of filteredPortfolio">
 
       <ng-container *ngIf="obj.is_active">
+
         <article class="article">
 
-          <div class="img-project">
-            <i *ngIf="obj.is_destacad" class="fa-solid fa-star"></i>
-            <img class="img" [src]="obj.photo" [alt]="obj.title">
-          </div>
+          <div class="article__container">
+            <!--imagen-->
+            <div class="project__img-container">
+              <i *ngIf="obj.is_destacad" class="fa-solid fa-star project__destacad"></i>
+              <img class="project__img" [src]="obj.photo" [alt]="obj.title">
+            </div>
 
-          <div class="project">
-            <h3 class="project-title">{{obj.title}}</h3>
-            <ul class="project-items">
-              <li *ngFor="let item of obj.skill" class="project-item">
-                {{item}}
-              </li>
-            </ul>
+            <!--descripcion-->
+            <div class="project__container">
 
-            <p>{{obj.date_project}}</p>
-            <p class="observation" *ngIf="obj.observation">{{obj.observation}}</p>
+              <div class="project__content">
+                <h3 class="project__title">{{ obj.title }}</h3>
+                <ul class="project__items">
+                  <li *ngFor="let item of obj.skill" class="project-item">
+                    {{ item }}
+                  </li>
+                </ul>
 
-            <div class="buttons">
-              <a [href]="obj.link_github" target="_blank" class="button" *ngIf="obj.link_github">
-                <i class="fa-brands fa-github"></i>
-              </a>
-              <a [href]="obj.link_website" target="_blank" class="button" *ngIf="obj.link_website">
-                <i class="fa-solid fa-globe"></i>
-              </a>
+                <p class="project__description">{{ obj.description }}</p>
+                <p class="project__description" style="text-align: end;"><em>{{ obj.observation }}, {{ obj.date_project }}</em></p>
+              </div>
             </div>
           </div>
 
 
-      </article>
+          <div class="project__buttons">
+            <a [href]="obj.link_github" target="_blank" class="project__btn-link" *ngIf="obj.link_github">
+              <i class="fa-brands fa-linkedin project__btn-icon"></i>
+              <span class="project__btn-title">Ver Código</span>
+            </a>
+            <a [href]="obj.link_website" target="_blank" class="project__btn-link" *ngIf="obj.link_website">
+              <i class="fa-solid fa-eye project__btn-icon"></i>
+              <span class="project__btn-title">Ver Sitio</span>
+            </a>
+          </div>
+        </article>
+
       </ng-container>
 
     </ng-container>
 
-
-
   </div>
+
 </section>
+
+
 
 
 

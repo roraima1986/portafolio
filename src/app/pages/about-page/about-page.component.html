@@ -1,134 +1,25 @@
 <section class="section about" id="about" >
 
-  <header class="section-title">
-    <h2 class="section-title-h2">Sobre mí</h2>
+  <header class="section__title">
+    <h2 class="section__title-h2">Sobre mí</h2>
   </header>
 
   <article class="article">
 
-    <div class="article-about">
-      <div class="about-image">
-        <img src="./assets/img/avatar/roraima.jpeg" class="image" alt="Roraima">
-      </div>
-
-      <!--Acerca de mi-->
-      <div class="about-description">
-        <p class="description">
-          Soy Desarrollador Frontend con experiencia en tecnologías web modernas. Me encanta trabajar en equipos colaborativos
-          para crear experiencias atractivas y funcionales. Poseo habilidades en HTML, CSS y JavaScript, así como experiencia en
-          el uso de frameworks como React y Angular.
-        </p>
-      </div>
-    </div>
+    <!--Perfil-->
+    <app-profile />
 
     <!--Experiencia Laboral-->
-    <h3 class="about-subtitle">Experiencia</h3>
+    <app-experience />
 
-    <!--Experiencia en Colabora-->
-    <div class="resume-container">
-      <div class="resume-time">
-        <span class="resume-year">Oct 2023 - Actualmente</span>
-        <span class="resume-company">Colabora</span>
-      </div>
-      <div class="divider"></div>
-      <div class="resume-profession">
-        <h4 class="resume-title">Desarrollador Frontend Independiente</h4>
-        <p class="resume-description">
-          Colaboré en el desarrollo de aplicaciones web utilizando HTML, CSS y JavaScript. Trabajé en la implementación de diseños responsivos para garantizar una experiencia de usuario óptima en diferentes dispositivos. Contribuí al desarrollo de interfaces de usuario interactivas utilizando React.
-        </p>
-      </div>
-    </div>
+    <!--Estudios-->
+    <app-study />
 
-    <!--Experiencia con Informática Marco Moya EIRL-->
-    <div class="resume-container">
-      <div class="resume-time">
-        <span class="resume-year">Nov 2021 - Oct 2023</span>
-        <span class="resume-company">Informática Marco Moya EIRL</span>
-      </div>
-      <div class="divider"></div>
-      <div class="resume-profession">
-        <h4 class="resume-title">Desarrolador Frontend</h4>
-        <p class="resume-description">
-          Colaboré en el desarrollo de aplicaciones web utilizando HTML, CSS y JavaScript. Trabajé en la implementación de diseños responsivos para garantizar una experiencia de usuario óptima en diferentes dispositivos. Participé en el mantenimiento y la optimización de sitios web existentes. Participé en la resolución de problemas y colaboré con el equipo de Backend para garantizar un integración fluida entre la interfaz de usuario y la lógica del servidor.
-        </p>
-      </div>
-    </div>
+    <!--Certificados-->
+    <app-certificate />
 
-    <h3 class="about-subtitle">Estudios</h3>
-
-    <div class="resume-container">
-      <div class="resume-time">
-        <span class="resume-year">2013</span>
-        <span class="resume-company">I.U.P. "Santiago Mariño" Extensión Maturín</span>
-      </div>
-      <div class="divider"></div>
-      <div class="resume-profession">
-        <h4 class="resume-title">Ingeniero de Sistemas</h4>
-        <p class="resume-description">Diseño, programación, implantación y mantenimiento de sistemas.</p>
-      </div>
-    </div>
-
-    <h3 class="about-subtitle">Certificados</h3>
-
-    <div class="certificates">
-      <div class="container-certificates">
-        <div class="certificates-certificate" *ngFor="let item of certificates">
-
-          <div class="certificate-image">
-             <img [src]="item.logo" class="image" [alt]="item.institute">
-          </div>
-
-          <div class="certificate-description">
-            <h4 class="certificate-title">{{item.name}}</h4>
-            <p class="certificate-institute">Instituto: {{item.institute}}</p>
-            <p class="certificate-date">Fecha: {{item.date}}</p>
-            <p class="certificate-id">Id certificado: {{item.id_certificate}}</p>
-            <p>
-              <a href="{{item.url_credencial}}" class="certificate-url-id" target="_blank">
-                Ver Credencial <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </a>
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <h3 class="about-subtitle">Habilidades</h3>
-
-
-    <ul class="skills">
-      <li class="skills-item">
-        Lenguajes:
-        <span class="skill">HTML</span>
-        <span class="skill">CSS</span>
-        <span class="skill">JavaScript</span>
-        <span class="skill">TypeScript</span>
-        <span class="skill">Python</span>
-      </li>
-
-      <li class="skills-item">
-        Frameworks:
-        <span class="skill">Angular</span>
-        <span class="skill">React</span>
-        <span class="skill">Bootstrap</span>
-        <span class="skill">Tailwind CSS</span>
-        <span class="skill">Django</span>
-      </li>
-      <li class="skills-item">
-        Herramientas:
-        <span class="skill">GitHub</span>
-        <span class="skill">Visual Studio Code</span>
-      </li>
-      <li class="skills-item">
-        Base de Datos:
-        <span class="skill">MySQL</span>
-        <span class="skill">PostgreSQL</span>
-      </li>
-      <li class="skills-item">Diseño Responsivo.</li>
-      <li class="skills-item">Metodología BEM.</li>
-
-    </ul>
+    <!--Habilidades-->
+    <app-skill />
 
   </article>
 </section>

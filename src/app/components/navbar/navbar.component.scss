@@ -1,0 +1,91 @@
+@use './../../../styles';
+
+.nav {
+  position: fixed;
+  bottom: 40%;
+  left: 0;
+  z-index: 10;
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 1rem 2rem;
+
+    .navbar__item {
+      font-size: 1.8rem;
+      color: styles.$white;
+
+
+      .navbar__link {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: styles.$white;
+
+        .navbar__icon {
+          font-size: 3rem;
+          margin-right: 1rem;
+        }
+
+        .navbar__title {
+          opacity: 0;
+          transform: translateX(-100%);
+          transition: all 300ms ease;
+        }
+
+      }
+    }
+
+    .navbar__item:hover {
+
+      .navbar__link {
+
+        .navbar__title {
+          opacity: 1;
+          transform: translateX(0%);
+        }
+
+      }
+
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .nav {
+    width: 100%;
+    background-color: styles.$black;
+    padding: 0 2rem;
+    bottom: 0;
+
+    .navbar {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem;
+
+      .navbar__item {
+
+        .navbar__link {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+
+          .navbar__icon {
+            margin-bottom: 0.5rem;
+          }
+
+          .navbar__title {
+            opacity: 1;
+            transform: translateX(-10%);
+            font-size: 1rem;
+          }
+        }
+
+      }
+    }
+  }
+}

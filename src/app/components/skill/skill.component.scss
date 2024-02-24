@@ -1,0 +1,73 @@
+@use './../../../styles';
+
+.container__skills {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 0 auto;
+  padding: 1rem;
+  gap: 3rem;
+
+  .skills {
+    border: 2px solid styles.$blue;
+    border-radius: 2rem;
+    padding: 2rem;
+    transition: all 300ms ease;
+
+    .skill__category {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+    }
+
+    .skill__list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      .skill__item {
+        font-size: 1.4rem;
+        text-align: center;
+        background-color: styles.$blue;
+        padding: 0.5rem 1rem;
+        border-radius: 1rem;
+
+      }
+    }
+  }
+
+  .skills:hover {
+    background-color: styles.$blue;
+    box-shadow: 0 0 20px styles.$black;
+
+    .skill__list {
+
+      .skill__item {
+        background-color: styles.$white;
+        color: styles.$blue;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .container__skills {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .container__skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .container__skills {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+

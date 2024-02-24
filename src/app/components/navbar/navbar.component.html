@@ -1,22 +1,22 @@
-<header class="header">
+<!--
+<div class="btn-toggle" (click)="toggleNavbar()">
+  <button class="button">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+</div>
+-->
 
-  <!--
-  <div class="btn-toggle" (click)="toggleNavbar()">
-    <button class="button">
-      <i class="fa-solid fa-bars"></i>
-    </button>
-  </div>
-  -->
+<!--<nav class="nav" [ngClass]="isNavbarVisible ? 'show' : 'hide'">-->
 
-  <!--<nav class="nav" [ngClass]="isNavbarVisible ? 'show' : 'hide'">-->
-  <nav class="nav">
-    <ul class="navbar">
-      <li class="item" *ngFor="let route of routeNavbar">
-        <a [routerLink]="route.route">
-          <i class="fa-solid {{route.icon}}"></i>
-        </a>
-      </li>
-    </ul>
-  </nav>
+<nav class="nav">
+  <ul class="navbar">
+    <li class="navbar__item" *ngFor="let route of routeNavbar">
+      <a [routerLink]="route.route" class="navbar__link">
+        <i class="fa-solid {{ route.icon }} navbar__icon"></i>
+        <span class="navbar__title">{{route.title}}</span>
+      </a>
+    </li>
+  </ul>
+</nav>
 
-</header>
+

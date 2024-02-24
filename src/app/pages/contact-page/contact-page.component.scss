@@ -1,0 +1,57 @@
+@use './../../../styles';
+
+.contact {
+  width: 100% !important;
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+
+    .info__item {
+      display: flex;
+      text-align: center;
+
+      .info__content {
+        font-size: 1.8rem;
+
+        .info__title {
+          margin-bottom: 1rem;
+        }
+
+        .info__info {
+          font-size: 2rem;
+        }
+
+        .info__link {
+
+          .social__icon {
+            background-color: transparent;
+            color: styles.$white;
+            font-size: 2rem;
+            text-align: center;
+            width: 5rem;
+            height: 5rem;
+            line-height: 5rem;
+            border: 2px solid styles.$blue;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 300ms ease;
+            margin: 1rem;
+          }
+
+          .social__icon:hover {
+            background-color: styles.$blue;
+            transform: rotate(360deg) scale(1.2, 1.2);
+          }
+
+        }
+
+      }
+    }
+  }
+}
+
+

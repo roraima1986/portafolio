@@ -5,12 +5,12 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
 @Component({
   selector: 'app-portfolio-page',
   templateUrl: './portfolio-page.component.html',
+  styleUrls: ['./portfolio-page.component.scss']
 })
 export class PortfolioPageComponent {
   public portfolio!: Portfolio[];
   public filteredPortfolio!: Portfolio[];
   public currentFilter: string = 'all'
-
 
   constructor(private portfolioService: PortfolioService){}
 

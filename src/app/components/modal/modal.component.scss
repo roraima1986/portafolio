@@ -1,0 +1,69 @@
+@use './../../../styles';
+
+.modal {
+  position: fixed;
+  width: 40%;
+  top: 25%;
+  left: 30%;
+  z-index: 20;
+  background-color: styles.$blue;
+  border-radius: 2rem;
+
+  .modal__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    border-bottom: 1px solid styles.$gray;
+
+    .modal__title {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .modal__close-icon {
+      font-size: 2rem;
+      color: orange;
+      cursor: pointer;
+    }
+  }
+
+  .modal__body {
+    padding: 1rem 3rem;
+    border-bottom: 1px solid styles.$gray;
+
+    .modal__description {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+
+  }
+
+  .modal__footer {
+    padding: 1rem 3rem;
+    text-align: center;
+
+    .modal__close-button {
+      background-color: styles.$white;
+      border: none;
+      border-radius: 3rem;
+      padding: 1rem 4rem;
+      font-size: 1.6rem;
+      cursor: pointer;
+      transition: all 300ms ease;
+    }
+
+    .modal__close-button:hover {
+      background-color: orange;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .modal {
+    top: 25%;
+    left: 5%;
+    width: 90%;
+  }
+}
