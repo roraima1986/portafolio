@@ -1,5 +1,5 @@
 export interface Portfolio {
-  id:number;
+  id:            number;
   photo?:        string;
   title:         string;
   skill:         string[];

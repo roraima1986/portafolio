@@ -359,7 +359,7 @@ export class PortfolioService {
         skill        : ["Angular"],
         description  : "Página web de mi portafolio, donde muestro mis proyectos, practicas y habilidades. El diseño de la página es responsivo y fue creado usando el framework de Angular.",
         date_project : "05/10/2023",
-        observation  : "Propia",
+        observation  : "",
         link_github  : "https://github.com/roraima1986/portafolio",
         link_website : "",
         is_active    : true,

@@ -6,29 +6,32 @@
 
   <!--Botones para filtrar los proyectos-->
   <nav class="nav-portfolio">
+
     <button (click)="filteredProjects('all')" class="nav-item" [class.nav-active]="currentFilter === 'all'" >
-      Todos
+      <i class="fa-solid fa-rectangle-list"></i>
+      <span class="nav-text">Todos</span>
     </button>
 
     <button (click)="filteredProjects('destacado')" class="nav-item" [class.nav-active]="currentFilter === 'destacado'">
       <i class="fa-solid fa-star"></i>
-      Destacado
+      <span class="nav-text">Destacado</span>
     </button>
 
     <button (click)="filteredProjects('JavaScript')" class="nav-item" [class.nav-active]="currentFilter === 'JavaScript'">
       <i class="fa-brands fa-js"></i>
-      JavaScript
+      <span class="nav-text">JavaScript</span>
     </button>
 
     <button (click)="filteredProjects('Angular')" class="nav-item" [class.nav-active]="currentFilter === 'Angular'">
       <i class="fa-brands fa-angular"></i>
-      Angular
+      <span class="nav-text">Angular</span>
     </button>
 
     <button (click)="filteredProjects('React')" class="nav-item" [class.nav-active]="currentFilter === 'React'">
       <i class="fa-brands fa-react"></i>
-      React
+      <span class="nav-text">React</span>
     </button>
+
   </nav>
 
   <!--Contenedor de los proyectos-->
@@ -50,22 +53,24 @@
             <!--descripcion-->
             <div class="project__container">
 
+              <ul class="project__items">
+                <li *ngFor="let item of obj.skill" class="project-item" [ngStyle]="{'background': onBgColorSkill(item), 'color':onColorSkill(item)}">
+                  {{ item }}
+                </li>
+              </ul>
+
               <div class="project__content">
                 <h3 class="project__title">{{ obj.title }}</h3>
-                <ul class="project__items">
-                  <li *ngFor="let item of obj.skill" class="project-item">
-                    {{ item }}
-                  </li>
-                </ul>
 
                 <p class="project__description">{{ obj.description }}</p>
-                <p class="project__description" style="text-align: end;"><em>{{ obj.observation }}, {{ obj.date_project }}</em></p>
+                <p class="project__observation">{{ obj.observation }}</p>
               </div>
             </div>
           </div>
 
 
           <div class="project__buttons">
+
             <a [href]="obj.link_github" target="_blank" class="project__btn-link" *ngIf="obj.link_github">
               <i class="fa-brands fa-linkedin project__btn-icon"></i>
               <span class="project__btn-title">Ver Código</span>

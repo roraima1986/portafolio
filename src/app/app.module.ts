@@ -15,7 +15,7 @@ import { CertificateComponent } from './components/certificate/certificate.compo
 import { StudyComponent } from './components/study/study.component';
 import { SkillComponent } from './components/skill/skill.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { ModalComponent } from './components/modal/modal.component';
+import { LoaderComponent } from './components/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +31,7 @@ import { ModalComponent } from './components/modal/modal.component';
     StudyComponent,
     SkillComponent,
     FooterComponent,
-    ModalComponent
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
