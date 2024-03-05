@@ -4,6 +4,54 @@
   position: relative;
 }
 
+.bg__container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.bg__container-img {
+  position: absolute;
+  width: 30%;
+  filter: opacity(0.5);
+}
+
+.img__1 {
+  top: 0px;
+  left: 5%;
+  transform: translateY(-65%);
+  animation: upAndDown 15s infinite;
+}
+
+.img__2 {
+  top: 0px;
+  right: 5%;
+  transform: translateY(-50%);
+
+}
+
+.img__3 {
+  bottom: 0px;
+  right: 0px;
+  transform: translateY(20%) translateX(20%);
+  animation: rotateSphere 20s infinite;
+}
+
+@keyframes rotateSphere {
+  0% {transform: translateY(50%) translateX(50%) rotate(0);}
+  50% {transform: translateY(50%) translateX(50%) rotate(60deg);}
+  100% {transform: translateY(50%) translateX(50%) rotate(0);}
+}
+
+@keyframes upAndDown {
+  0% {transform: translateY(-65%);}
+  50% {transform: translateY(-75%);}
+  100% {transform: translateY(-65%);}
+}
+
+
 .container__sphere {
   position: fixed;
   width: 100vw;
