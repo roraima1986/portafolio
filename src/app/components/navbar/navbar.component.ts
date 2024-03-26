@@ -15,12 +15,7 @@ export class NavbarComponent  {
     {route: 'portafolio', title: 'Portafolio', icon: 'fa-briefcase'},
     {route: 'contacto', title: 'Contacto', icon: 'fa-envelope'},
   ]
-  // Navbar visible
-  /*public isNavbarVisible:boolean = true;
 
-  toggleNavbar():void {
-    this.isNavbarVisible = !this.isNavbarVisible;
-  }*/
 }
 
 

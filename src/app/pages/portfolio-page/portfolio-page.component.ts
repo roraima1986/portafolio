@@ -1,36 +1,30 @@
 import { Component } from '@angular/core';
 import { Portfolio } from 'src/app/interfaces/portfolio.interface';
 import { PortfolioService } from 'src/app/services/portfolio.service';
+import { trigger, state, style, animate, transition } from '@angular/animations';
 
 @Component({
   selector: 'app-portfolio-page',
   templateUrl: './portfolio-page.component.html',
-  styleUrls: ['./portfolio-page.component.scss']
+  styleUrls: ['./portfolio-page.component.scss'],
+  animations: [
+    trigger('fadeInOut', [
+      state('void', style({
+        opacity: 0
+      })),
+      transition('void <=> *', animate(500)),
+    ])
+  ]
 })
 export class PortfolioPageComponent {
   public portfolio!: Portfolio[];
-  public filteredPortfolio: Portfolio[] = [];
-  public currentFilter: string = 'destacado' // Establecer 'destacado' como filtro inicial
-
 
   constructor(private portfolioService: PortfolioService){}
 
   ngOnInit(): void {
     this.portfolioService.getportfolioMini().then((data:Portfolio[]) => {
       this.portfolio = data;
-      this.filteredProjects(this.currentFilter);
     })
-  }
-
-  filteredProjects(filter: string): void {
-    this.currentFilter = filter;
-    if(filter === 'all') {
-      this.filteredPortfolio = this.portfolio;
-    } else if(filter === 'destacado') {
-      this.filteredPortfolio = this.portfolio.filter(project => project.is_destacad);
-    }else {
-      this.filteredPortfolio = this.portfolio.filter(project => project.skill.includes(filter))
-    }
   }
 
   // Color de fondo de las habilidades/categoorias

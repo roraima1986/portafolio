@@ -1,0 +1,10 @@
+<button class="btn__dark__mode" (click)="toggleDarkMode()">
+
+  <!--Modo Claro-->
+  <i class="fa-solid fa-moon btn__moon" *ngIf="!isDarkMode"></i>
+
+  <!--Modo Oscuro-->
+  <i class="fa-solid fa-sun btn__sun" *ngIf="isDarkMode"></i>
+
+</button>
+

@@ -6,5 +6,5 @@ Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-
 
 ## Vista Previa
 
-![Preview](./src/assets/design/portafolio-design.jpg)
+![Preview](./src/assets/design/portfolio-design.png)
 

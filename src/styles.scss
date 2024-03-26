@@ -3,10 +3,13 @@ $subtitle: 'Poppins', sans-serif;
 $text: 'Open Sans', sans-serif;
 $black: #000;
 $white: #fff;
-$gray: #aaa;
+$gray: #777;
+$light-gray: #ddd;
 $dark-gray: #222;
-$blue: #0563bb;
-$green: #11526A;
+$dark: #262024;
+$blue: #004AAD;
+$green: #0097B2;
+$gradient: linear-gradient(90deg, #004AAD,#0097B2);
 
 
 /* Aspectos Generales */
@@ -21,8 +24,8 @@ html {
 }
 
 body {
-  background-color: $black;
-  color: $white;
+  /*background-color: $black;*/
+  color: $dark;
   font-family: $text;
 }
 
@@ -38,7 +41,9 @@ h2 {
   letter-spacing: 0.1rem;
 }
 
-h3, h4 {
+h3, h4, h5 {
+  font-family: $subtitle;
+  font-weight: 500;
   letter-spacing: 0.1rem;
 }
 
@@ -59,25 +64,68 @@ a {
   letter-spacing: 0.1rem;
 }
 
+span {
+  letter-spacing: 0.1rem;
+}
+
+/* Stilos generales para los botones */
+@mixin my-button() {
+  background-color: $light-gray;
+  color: $dark-gray;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1.5rem 4rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+
+@mixin my-button-hover {
+  background: $gradient;
+  color: $white;
+}
+
 .section__title {
-  padding-top: 10rem;
-  padding-bottom: 3rem;
+  position: relative;
+  margin-top: 15rem;
+  margin-bottom: 7rem;
 
   .section__title-h2 {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 4rem;
-    color: $gray;
+    color: $dark;
     text-transform: uppercase;
+  }
+
+  .section__title-h2:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    width: 70px;
+    height: 4px;
+    background: $gradient;
   }
 
 }
 
+
+
 .section__subtitle {
   margin: 5rem 0;
-  color: $gray;
+  color: $dark-gray;
   font-size: 2.5rem;
   text-align: center;
 }
 
+/* Modo Oscuro */
+.dark__mode,
+.dark__mode .nav {
+  background-color: $black;
+  color: $white;
+}
 
-
+.dark__mode h2, h3 {
+  color: $gray!important;
+}

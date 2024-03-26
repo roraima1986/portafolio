@@ -28,14 +28,14 @@
         .info__link {
 
           .social__icon {
-            background-color: transparent;
-            color: styles.$white;
+            background-color: styles.$light-gray;
+            color: styles.$dark-gray;
             font-size: 2rem;
             text-align: center;
             width: 5rem;
             height: 5rem;
             line-height: 5rem;
-            border: 2px solid styles.$blue;
+
             border-radius: 50%;
             cursor: pointer;
             transition: all 300ms ease;
@@ -43,8 +43,8 @@
           }
 
           .social__icon:hover {
-            background-color: styles.$blue;
-            transform: rotate(360deg) scale(1.2, 1.2);
+            background: styles.$gradient;
+            color: styles.$white;
           }
 
         }

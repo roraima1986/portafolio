@@ -1,20 +1,34 @@
 <h3 class="section__subtitle">Habilidades</h3>
 
-<!--<ul class="skills">
-
-  <li class="skills-item" *ngFor="let skill of skills">
-    {{ skill.category }}:
-    <span class="skill" *ngFor="let item of skill.items">{{ item }}</span>
-  </li>
-
-</ul>-->
-
 <div class="container__skills">
-  <article class="skills" *ngFor="let skill of skills">
-    <h4 class="skill__category">{{ skill.category }}</h4>
-    <ul class="skill__list">
-      <li class="skill__item" *ngFor="let item of skill.items">{{ item }}</li>
-    </ul>
+  <article class="skills">
+    <h4 class="skills__title">Desarrollador Frontend</h4>
+
+    <div class="skills__body">
+      <h5 class="skills__subtitle">Lenguajes</h5>
+      <p class="skills__content">HTML, CSS, JavaScript, TypeScript</p>
+      <div class="divider"></div>
+      <h5 class="skills__subtitle">Frameworks</h5>
+      <p class="skills__content">Angular, Bootstrap, Tailwind</p>
+      <div class="divider"></div>
+      <h5 class="skills__subtitle">Herramientas</h5>
+      <p class="skills__content">GitHub, Visual Studio Code</p>
+    </div>
+  </article>
+
+  <article class="skills">
+    <h4 class="skills__title">Desarrollador Backend</h4>
+
+    <div class="skills__body">
+      <h5 class="skills__subtitle">Lenguajes</h5>
+      <p class="skills__content">Python, MySQL</p>
+      <div class="divider"></div>
+      <h5 class="skills__subtitle">Frameworks</h5>
+      <p class="skills__content">Django</p>
+      <div class="divider"></div>
+      <h5 class="skills__subtitle">Herramientas</h5>
+      <p class="skills__content">GitHub, Visual Studio Code</p>
+    </div>
   </article>
 </div>
 

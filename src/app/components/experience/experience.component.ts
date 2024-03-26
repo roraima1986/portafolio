@@ -22,12 +22,11 @@ export class ExperienceComponent {
     {
       time: 'Nov 2021 - Oct 2023',
       company: 'Informática Marco Moya EIRL',
-      position: 'Desarrollador Frontend',
+      position: 'Desarrollador Web',
       job_description: [
-        'Aplicaciones web utilizando HTML, CSS y JavaScript.',
-        'Implementación de diseños responsivos.',
+        'Desarrollo de interfaces responsivas utilizando HTML, CSS y JavaScript. ',
+        'Integración de APIs de terceros para mejorar la funcionalidad de las aplicaciones.',
         'Mantenimiento y optimización de sitios web existentes.',
-        'Colaboración con el equipo de Backend.',
       ]
     }
 

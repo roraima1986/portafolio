@@ -1,8 +1,7 @@
 @use './../../../styles';
 
-
 .home {
-
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,55 +12,35 @@
   }
 
   .home__title {
-    font-size: 7rem;
+    font-size: 6rem;
     margin-bottom: 0.5rem;
-    animation-name: changeColor;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    color: styles.$blue;
+
   }
 
   .home__subtitle {
     font-size: 3.5rem;
-    color: styles.$gray;
-  }
-
-  @keyframes changeColor {
-    0% {color: styles.$white}
-    25% {color: styles.$blue}
-    50% {color: styles.$green}
-    75% {color: styles.$blue}
-    100% {color: styles.$white}
+    color: styles.$dark-gray;
   }
 
   .home__links {
     margin-top: 5rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
 
     .links__button {
-      background-color: transparent;
-      color: #fff;
-      font-size: 1.6rem;
-      border: 2px solid styles.$blue;
-      padding: 1rem 4rem;
-      border-radius: 3rem;
-      overflow: hidden;
-      cursor: pointer;
-      transition: all 300ms ease;
+      @include styles.my-button();
     }
 
     .links__button:hover {
-      background-color: styles.$blue;
-      transform: scale(1.2, 1.2);
+      @include styles.my-button-hover();
     }
 
   }
 
+
 }
+
+
+
 
 @media (max-width: 768px) {
   .home {

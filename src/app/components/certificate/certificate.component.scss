@@ -1,3 +1,5 @@
+@use './../../../styles';
+
 .container__certificates {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -7,6 +9,7 @@
     width: 100%;
     overflow: hidden;
     filter: grayscale(100%);
+    border: 1px solid styles.$light-gray;
     transition: all 300ms ease;
 
     .certificate-image {
@@ -28,7 +31,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 768px) {
   .container__certificates {
     grid-template-columns: repeat(1, 1fr);
   }

@@ -1,0 +1,24 @@
+@use './../../../styles';
+
+.btn__dark__mode {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 10000;
+  font-size: 2rem;
+  background: styles.$gradient;
+  color: styles.$white;
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  line-height: 5rem;
+  border-radius: 50%;
+  border: none;
+  margin-right: 1rem;
+  cursor: pointer;
+
+}
+
+
+
+

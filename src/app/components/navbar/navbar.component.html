@@ -1,17 +1,7 @@
-<!--
-<div class="btn-toggle" (click)="toggleNavbar()">
-  <button class="button">
-    <i class="fa-solid fa-bars"></i>
-  </button>
-</div>
--->
-
-<!--<nav class="nav" [ngClass]="isNavbarVisible ? 'show' : 'hide'">-->
-
 <nav class="nav">
   <ul class="navbar">
-    <li class="navbar__item" *ngFor="let route of routeNavbar">
-      <a [routerLink]="route.route" class="navbar__link">
+    <li class="navbar__item" *ngFor="let route of routeNavbar" routerLinkActive="nav__active">
+      <a [routerLink]="route.route"  class="navbar__link">
         <i class="fa-solid {{ route.icon }} navbar__icon"></i>
         <span class="navbar__title">{{route.title}}</span>
       </a>
