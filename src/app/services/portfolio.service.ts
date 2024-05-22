@@ -8,6 +8,19 @@ export class PortfolioService {
   getPortfolio() {
     return [
       {
+        id           : 9,
+        photo        : "./assets/img/projects/red-social-react-design.jpg",
+        title        : "Red Social",
+        skill        : ["React", "NodeJS", "ExpressJS", "MongoDB"],
+        description  : "Desarrollo de una Red Social utilizando Node.js, Express y MongoDB para la API RESTful, con integración de CORS, Mongoose, Validator, Moment, Multer, Mongoose-Paginate-V2, Bcrypt y JWT-Simple para funcionalidades avanzadas. La aplicación permite gestionar usuarios, seguidores, publicaciones y autenticación segura. La interfaz de usuario, desarrollada con React, ofrece una experiencia dinámica y responsiva, creando una plataforma social interactiva y escalable.",
+        date_project : "18/05/2024",
+        observation  : "Master React",
+        link_github  : "https://github.com/roraima1986/red-social",
+        link_website : "",
+        is_active    : true,
+      },
+
+      {
         id           : 8,
         photo        : "./assets/img/projects/develop-design.jpg",
         title        : "Agencia de Diseño y Desarrollo Web",
@@ -48,7 +61,7 @@ export class PortfolioService {
         id           : 5,
         photo        : "./assets/img/projects/avila-mood.png",
         title        : "Sistema de Inventario",
-        skill        : ["HTML", "CSS", "JavaScript", "Bootstrap", "JQuery", "Django"],
+        skill        : ["HTML", "CSS", "JavaScript", "Bootstrap", "JQuery", "Django", "MySQL"],
         description  : "Sistema de registro de productos diseñado para un centro estético. Desarrollado con los frameworks Django y Bootstrap, con el soporte de Sweetalert2 para la generación de alertas y Datatable para la visualización de tablas. Diseño Responsivo",
         date_project : "01/06/2023",
         observation  : "Cliente: Ávila Mood",

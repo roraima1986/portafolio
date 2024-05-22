@@ -46,6 +46,14 @@ export class PortfolioPageComponent {
         return '#61DAFB';
       case 'Django':
         return '#092E20';
+      case 'NodeJS':
+        return '#339933';
+      case 'ExpressJS':
+        return '#000000';
+      case 'MongoDB':
+        return '#4DB33D';
+      case 'MySQL':
+        return '#00758F';
       default:
         return 'styles.$blue'
     }

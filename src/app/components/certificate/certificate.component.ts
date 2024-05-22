@@ -9,6 +9,14 @@ import { Certificate } from 'src/app/interfaces/certificate.interface';
 export class CertificateComponent {
   public certificates: Certificate[] = [
     {
+      name:           'Master en React: Aprender ReactJS, Hooks, MERN, NodeJS, JWT+',
+      institute:      'Udemy',
+      id_certificate: 'UC-1c6c26b3-3dda-4125-acc6-3752062a2ec0/',
+      url_credencial: 'https://www.udemy.com/certificate/UC-1c6c26b3-3dda-4125-acc6-3752062a2ec0/',
+      date:           '18/05/2024',
+      image:          './assets/img/certificates/master-react.jpg'
+    },
+    {
       name:           'Master en CSS3 Avanzado: Maqueta 3 sitios web profesionales',
       institute:      'Udemy',
       id_certificate: 'UC-13cf28fb-26d6-4d84-b39b-3dc94914ee80/',
