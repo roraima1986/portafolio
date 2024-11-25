@@ -21,7 +21,7 @@ export class ExperienceComponent {
     },
     {
       time: 'Nov 2021 - Oct 2023',
-      company: 'Informática Marco Moya EIRL',
+      company: 'OpticaCloud',
       position: 'Desarrollador Web',
       job_description: [
         'Desarrollo de interfaces responsivas utilizando HTML, CSS y JavaScript. ',
