@@ -9,6 +9,14 @@ import { Certificate } from 'src/app/interfaces/certificate.interface';
 export class CertificateComponent {
   public certificates: Certificate[] = [
     {
+      name:           'Curso completo Figma 2024 + Diseño Web Responsive',
+      institute:      'Udemy',
+      id_certificate: 'UC-46b55d01-00e9-433b-b2db-be871d05d4c0/',
+      url_credencial: 'https://www.udemy.com/certificate/UC-46b55d01-00e9-433b-b2db-be871d05d4c0/',
+      date:           '19/01/2025',
+      image:          './assets/img/certificates/curso-figma-2024.jpg'
+    },
+    {
       name:           'Master en React: Aprender ReactJS, Hooks, MERN, NodeJS, JWT+',
       institute:      'Udemy',
       id_certificate: 'UC-1c6c26b3-3dda-4125-acc6-3752062a2ec0/',
